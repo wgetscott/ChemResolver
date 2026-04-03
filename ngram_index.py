@@ -61,8 +61,11 @@ class NGramIndex:
         Enables fast retrieval of candidate matches during search.
         """
         
+        # Normalise
+        clean_word = word.lower().replace(" ", "")
+
         # Generate all n-grams for word
-        grams = self.get_ngrams(word)
+        grams = self.get_ngrams(clean_word)
 
         # Add the word to each n-gram bucket in the index
         for gram in grams:
@@ -71,7 +74,7 @@ class NGramIndex:
                 self.index[gram] = set()
 
             # Add word to the set of words containing this n-gram
-            self.index[gram].add(word)
+            self.index[gram].add(clean_word)
 
     def add_many(self, words: list[str]):
         for word in words:
@@ -91,7 +94,6 @@ class NGramIndex:
             5. Score each candidate using similarity metrics
             6. Return ranked results
         """
-
 
         # Normalise text
         clean_text = text.lower().replace(" ", "")
@@ -134,6 +136,6 @@ class NGramIndex:
 
         if top_k is not None:
             top_k = max(0, top_k)
-            ranked = ranked[:top_k]
+            ranked = ranked[:top_k] # return top k candidates
 
         return ranked
