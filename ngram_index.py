@@ -123,8 +123,11 @@ class NGramIndex:
         scores = {}
 
         for candidate in candidates_list:
+            # Overlap
+            overlap = counts[candidate] / len(grams) if grams else 0.0
+
             # Compare query string vs candidate string
-            scores[candidate] = score(clean_text, candidate, overlap=counts[candidate] / len(grams))
+            scores[candidate] = score(clean_text, candidate, overlap=overlap)
 
         # Sort by similarity score (descending)
         ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
