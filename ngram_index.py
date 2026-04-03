@@ -73,10 +73,16 @@ class NGramIndex:
             # Add word to the set of words containing this n-gram
             self.index[gram].add(word)
 
-    def query(self, text: str) -> list:
+    def add_many(self, words: list[str]):
+        for word in words:
+            self.add(word)
+
+    def query(self, text: str, top_k: int | None = None) -> list:
         """
         Queries the n-gram index to find and rank candidate matches.
-
+        
+        Can optionally be set to return only the top k candidates.
+        
         Pipeline:
             1. Normalise input
             2. Generate n-grams
@@ -121,4 +127,10 @@ class NGramIndex:
             scores[candidate] = score(clean_text, candidate, overlap=counts[candidate] / len(grams))
 
         # Sort by similarity score (descending)
-        return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+        ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+
+        if top_k is not None:
+            top_k = max(0, top_k)
+            ranked = ranked[:top_k]
+
+        return ranked
