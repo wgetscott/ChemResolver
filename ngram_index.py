@@ -1,5 +1,6 @@
 # Build n-gram Inverted Index
 
+import re
 from ranker import score
 
 class NGramIndex:
@@ -24,6 +25,12 @@ class NGramIndex:
         self.index: dict[str, set[str]] = {} # stores words that contain a given n-gram
 
 
+    def _normalise(self, text: str) -> str:
+        text = text.lower().replace(" ", "")
+        text = re.sub(r"[^a-z0-9]", "", text) # remove puncuation and symbols
+        return text
+
+
     def get_ngrams(self, text: str, n: int = 3) -> set:
         """
         Generates character-level n-grams from a string.
@@ -39,7 +46,15 @@ class NGramIndex:
         """
 
         # Normalise input
-        clean_text = text.lower().replace(" ", "")
+        clean_text = self._normalise(text)
+
+        # Handle negative/invalid n-grams
+        if n <= 0:
+            raise ValueError("n must be positive")
+
+        # Handle short strings (below n-gram requirement)
+        if len(clean_text) < n:
+            return set()
 
         ngrams = set()
 
@@ -62,7 +77,7 @@ class NGramIndex:
         """
         
         # Normalise
-        clean_word = word.lower().replace(" ", "")
+        clean_word = self._normalise(word)
 
         # Generate all n-grams for word
         grams = self.get_ngrams(clean_word)
@@ -76,9 +91,11 @@ class NGramIndex:
             # Add word to the set of words containing this n-gram
             self.index[gram].add(clean_word)
 
+
     def add_many(self, words: list[str]):
         for word in words:
             self.add(word)
+
 
     def query(self, text: str, top_k: int | None = None) -> list:
         """
@@ -96,7 +113,7 @@ class NGramIndex:
         """
 
         # Normalise text
-        clean_text = text.lower().replace(" ", "")
+        clean_text = self._normalise(text)
 
         # Generate n-grams from query
         grams = self.get_ngrams(clean_text)
@@ -139,3 +156,4 @@ class NGramIndex:
             ranked = ranked[:top_k] # return top k candidates
 
         return ranked
+    
