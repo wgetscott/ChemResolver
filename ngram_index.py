@@ -142,8 +142,12 @@ class NGramIndex:
         scores = {}
 
         for candidate in candidates_list:
-            # Overlap
-            overlap = counts[candidate] / len(grams) if grams else 0.0
+            candidate_grams = self.get_ngrams(candidate)
+
+            # Overlap as pairwise Dice coefficient between query and candidate n-grams.
+            # Uses query grams and candidate grams only, ensuring similarity is independent of
+            # retrieval set size.
+            overlap = (2*counts[candidate]) / (len(grams) + len(candidate_grams)) 
 
             # Compare query string vs candidate string
             scores[candidate] = score(clean_text, candidate, overlap=overlap)
