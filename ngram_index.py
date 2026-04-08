@@ -46,7 +46,7 @@ class NGramIndex:
         if len(text) == 0:
             return set()
         
-        # Handle short strings (below n-gram requirement)
+        # If string is shorter than n, treat whole string as a single gram (fallback)
         if len(text) < n:
             return {text}
         
@@ -110,25 +110,17 @@ class NGramIndex:
         clean_text = normalise(text)
 
         # Generate n-grams from query
-        grams = self.get_ngrams(clean_text)
+        query_grams = self.get_ngrams(clean_text)
 
         # Set of candidates
         candidates = set()
 
-        # Tracks how many n-grams each candidate shares with query
-        counts: dict[str, int] = {}
-
-        for gram in grams:
+        # Retrieve candidate words that share at least one n-gram with the query
+        for gram in query_grams:
             if gram in self.index:
                 words = self.index[gram]
                 for word in words:
                     candidates.add(word)
-
-                    # Count how many times this word appears across n-grams
-                    if word in counts:
-                        counts[word] += 1
-                    else:
-                        counts[word] = 1
 
         candidates_list = list(candidates)
 
@@ -141,8 +133,10 @@ class NGramIndex:
             # Overlap as pairwise Dice coefficient between query and candidate n-grams.
             # Uses query grams and candidate grams only, ensuring similarity is independent of
             # retrieval set size.
-            denom = len(grams) + len(candidate_grams)
-            overlap = (2 * counts[candidate]) / denom if denom else 0.0 
+            intersection = query_grams & candidate_grams
+            denom = len(query_grams) + len(candidate_grams)
+
+            overlap = (2 * len(intersection)) / denom if denom else 0.0 
 
             # Compare query string vs candidate string
             scores[candidate] = score(clean_text, candidate, overlap=overlap)
