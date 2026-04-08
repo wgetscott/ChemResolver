@@ -53,7 +53,7 @@ class NGramIndex:
         
         self.n = n
         self.index: dict[str, set[str]] = {} # stores words that contain a given n-gram
-
+        self.n_gram_df: dict[str, int] = {} # document frequency of each n-gram
 
     def get_ngrams(self, text: str, n: int | None = None) -> Set[str]:
         """
@@ -118,7 +118,13 @@ class NGramIndex:
 
             # Add word to the set of words containing this n-gram
             self.index[gram].add(clean_word)
-
+            
+            # Update document frequency: counts how many distinct words
+            # contain this n-gram
+            if gram in self.n_gram_df:
+                self.n_gram_df[gram] += 1
+            else:
+                self.n_gram_df[gram] = 1
 
     def add_many(self, words: list[str]):
         for word in words:
