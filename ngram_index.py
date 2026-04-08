@@ -91,7 +91,7 @@ class NGramIndex:
             self.add(word)
 
 
-    def query(self, text: str, top_k: int | None = None) -> list:
+    def query(self, text: str, top_k: int | None = None, min_shared_ngrams: int = 2) -> list:
         """
         Queries the n-gram index to find and rank candidate matches.
         
@@ -115,6 +115,9 @@ class NGramIndex:
         # Set of candidates
         candidates = set()
 
+        # Track how many query n-grams each candidate matches
+        shared_counts: dict[str, int] = {}
+
         # Retrieve candidate words that share at least one n-gram with the query
         for gram in query_grams:
             if gram in self.index:
@@ -122,12 +125,21 @@ class NGramIndex:
                 for word in words:
                     candidates.add(word)
 
-        candidates_list = list(candidates)
+                    if word in shared_counts:
+                        shared_counts[word] += 1
+                    else:
+                        shared_counts[word] = 1
+
+        # Filter weak candidates (require at least 2 shared n-grams)
+        filtered_candidates = [
+            c for c in candidates 
+            if shared_counts.get(c, 0) >= min_shared_ngrams
+        ]
 
         # Score tracker
         scores = {}
 
-        for candidate in candidates_list:
+        for candidate in filtered_candidates:
             candidate_grams = self.get_ngrams(candidate)
 
             # Overlap as pairwise Dice coefficient between query and candidate n-grams.
