@@ -12,7 +12,7 @@ class NGramIndex:
     Allows fast candidate retrieval for similarity search.
     """
 
-    def __init__(self, n:int = 3):
+    def __init__(self, n: int = 3):
         """
         Initialises the index.
 
@@ -38,22 +38,23 @@ class NGramIndex:
             set: unique n-grams
         """
 
-        # Normalise input
-        clean_text = normalise(text)
-
         # Handle negative/invalid n-grams
         if n <= 0:
             raise ValueError("n must be positive")
 
-        # Handle short strings (below n-gram requirement)
-        if len(clean_text) < n:
+        # Handle empty string
+        if len(text) == 0:
             return set()
-
+        
+        # Handle short strings (below n-gram requirement)
+        if len(text) < n:
+            return {text}
+        
         ngrams = set()
 
         # Slide a window of size n across the string
-        for i in range(0, (len(clean_text)-n) + 1):
-            substring = clean_text[i:i+n]
+        for i in range(0, (len(text)-n) + 1):
+            substring = text[i:i+n]
             ngrams.add(substring)
 
         return ngrams
@@ -97,15 +98,15 @@ class NGramIndex:
         Can optionally be set to return only the top k candidates.
         
         Pipeline:
-            1. Normalise input
-            2. Generate n-grams
+            1. Normalise input text
+            2. Generate n-grams from normalised input
             3. Retrieve candidate words from inverted index
             4. Count n-gram overlaps per candidate
             5. Score each candidate using similarity metrics
-            6. Return ranked results
+            5. Return ranked results
         """
 
-        # Normalise text
+        # Normalise
         clean_text = normalise(text)
 
         # Generate n-grams from query
@@ -140,7 +141,8 @@ class NGramIndex:
             # Overlap as pairwise Dice coefficient between query and candidate n-grams.
             # Uses query grams and candidate grams only, ensuring similarity is independent of
             # retrieval set size.
-            overlap = (2*counts[candidate]) / (len(grams) + len(candidate_grams)) 
+            denom = len(grams) + len(candidate_grams)
+            overlap = (2 * counts[candidate]) / denom if denom else 0.0 
 
             # Compare query string vs candidate string
             scores[candidate] = score(clean_text, candidate, overlap=overlap)
