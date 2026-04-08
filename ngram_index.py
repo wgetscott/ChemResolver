@@ -2,6 +2,37 @@
 
 from ranker import score
 from utils import normalise
+from typing import Set
+from dataclasses import dataclass
+
+@dataclass
+class Result:
+    """
+    Represents a single ranked match result from the n-gram search system.
+
+    Attributes:
+        word (str):
+            The matched candidate string (e.g., checmical name or entity).
+
+        score (float):
+            The final similarity score combining:
+            - Jaccard similarity (character overlap)
+            - Levenshtein similarity (edit-distance similarity)
+            - Prefix similarity (structural naming bias)
+            - N-gram overlap (retrieval-stage signal)
+
+            Higher values indicate stronger matches.
+
+        overlap (float):
+            Dice coefficient based on n-gram intersection between the
+            query and candidate strings.
+    """
+    
+    word: str
+    score: float
+    overlap: float
+
+
 class NGramIndex:
     """
     Simple inverted index for fast string matching using character n-grams.
@@ -24,7 +55,7 @@ class NGramIndex:
         self.index: dict[str, set[str]] = {} # stores words that contain a given n-gram
 
 
-    def get_ngrams(self, text: str, n: int = 3) -> set:
+    def get_ngrams(self, text: str, n: int | None = None) -> Set[str]:
         """
         Generates character-level n-grams from a string.
 
@@ -37,6 +68,9 @@ class NGramIndex:
         Returns:
             set: unique n-grams
         """
+        
+        if n is None:
+            n = self.n
 
         # Handle negative/invalid n-grams
         if n <= 0:
@@ -91,7 +125,7 @@ class NGramIndex:
             self.add(word)
 
 
-    def query(self, text: str, top_k: int | None = None, min_shared_ngrams: int = 2) -> list:
+    def query(self, text: str, top_k: int | None = None, min_shared_ngrams: int = 2) -> list[Result]:
         """
         Queries the n-gram index to find and rank candidate matches.
         
@@ -136,8 +170,7 @@ class NGramIndex:
             if shared_counts.get(c, 0) >= min_shared_ngrams
         ]
 
-        # Score tracker
-        scores = {}
+        results: list[Result] = []
 
         for candidate in filtered_candidates:
             candidate_grams = self.get_ngrams(candidate)
@@ -151,13 +184,18 @@ class NGramIndex:
             overlap = (2 * len(intersection)) / denom if denom else 0.0 
 
             # Compare query string vs candidate string
-            scores[candidate] = score(clean_text, candidate, overlap=overlap)
+            final_score = score(clean_text, candidate, overlap=overlap)
+
+            results.append(Result(
+                word=candidate,
+                score=final_score,
+                overlap=overlap
+            ))
 
         # Sort by similarity score (descending)
-        ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+        ranked = sorted(results, key=lambda x: x.score, reverse=True)
 
         if top_k is not None:
-            top_k = max(0, top_k)
             ranked = ranked[:top_k] # return top k candidates
 
         return ranked
