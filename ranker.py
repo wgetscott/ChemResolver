@@ -1,6 +1,7 @@
 # Ranking Score Function for Chemical Entities
 
 from similarity import jaccard_similarity, levenshtein_similarity
+from utils import normalise
 
 def score(a: str, b: str, overlap: float = 0.0) -> float:
     """
@@ -16,7 +17,7 @@ def score(a: str, b: str, overlap: float = 0.0) -> float:
         float: final score in [0, 1]
     """
     
-    a, b = a.lower(), b.lower() # normalise
+    a, b = normalise(a), normalise(b)
 
     ls = levenshtein_similarity(a, b)
     js = jaccard_similarity(a, b)
