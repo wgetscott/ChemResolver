@@ -1,6 +1,6 @@
 # Build n-gram Inverted Index
 
-from ranker import score
+from ranker import score, breakdown
 from utils import normalise
 from typing import Set
 from dataclasses import dataclass
@@ -25,13 +25,39 @@ class Result:
             Higher values indicate stronger matches.
 
         overlap (float):
-            Dice coefficient based on n-gram intersection between the
-            query and candidate strings.
+            Combination of Dice coefficient + TF-IDF weighted overlap.
+
+        dice (float | None):
+            Ratio of shared n-grams to total n-grams across query and 
+            candidate. Only populated when debug=True.
+
+        tfidf (float | None):
+            TF-IDF weighted n-gram overlap. Downweights common n-grams
+            due to their lesser specificity. Only populated when debug=True.
+
+        jaccard (float | None):
+            Character-level Jaccard similarity between query and candidate.
+            Only populated when debug=True.
+
+        levenshtein (float | None):
+            Normalised edit-distance similarity between query and candidate.
+            Only populated when debug=True.
+
+        prefix (float | None):
+            Prefix match bonus. Rewards shared leading characters.
+            Only populated when debug=True.
     """
     
     word: str
     score: float
     overlap: float
+
+    # Debug fields: only populated when debug=True
+    dice: float | None = None
+    tfidf: float | None = None
+    jaccard: float | None = None
+    levenshtein: float | None = None
+    prefix: float | None = None 
 
 
 class NGramIndex:
@@ -128,12 +154,13 @@ class NGramIndex:
             else:
                 self.n_gram_df[gram] = 1
 
+
     def add_many(self, words: list[str]):
         for word in words:
             self.add(word)
 
 
-    def query(self, text: str, top_k: int | None = None, min_shared_ngrams: int = 2) -> list[Result]:
+    def query(self, text: str, top_k: int | None = None, min_shared_ngrams: int = 2, debug: bool = False) -> list[Result]:
         """
         Queries the n-gram index to find and rank candidate matches.
         
@@ -203,14 +230,29 @@ class NGramIndex:
             alpha = 0.5
             overlap = alpha * dice + (1 - alpha) * tfidf_normalised
 
-            # Compare query string vs candidate string
-            final_score = score(clean_text, candidate, overlap=overlap)
+            if debug:
+                # Debug mode: include score breakdown in each Result object
+                candidate_dict = breakdown(clean_text, candidate, overlap)
 
-            results.append(Result(
-                word=candidate,
-                score=final_score,
-                overlap=overlap
-            ))
+                results.append(Result(
+                    word=candidate,
+                    score=candidate_dict["final"],
+                    overlap=overlap,
+                    dice=dice,
+                    tfidf=tfidf_normalised,
+                    jaccard=candidate_dict["jaccard"],
+                    levenshtein=candidate_dict["levenshtein"],
+                    prefix=candidate_dict["prefix"]
+                ))
+            else:
+                # Compare query string vs candidate string
+                final_score = score(clean_text, candidate, overlap)
+
+                results.append(Result(
+                    word=candidate,
+                    score=final_score,
+                    overlap=overlap
+                ))
 
         # Sort by similarity score (descending)
         ranked = sorted(results, key=lambda x: x.score, reverse=True)

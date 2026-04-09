@@ -16,7 +16,7 @@ class Pipeline:
         self._index.add_many(words)
 
     
-    def search(self, query: str, top_k: int | None = None, min_shared_ngrams: int = 2) -> list[Result]:
+    def search(self, query: str, top_k: int | None = None, min_shared_ngrams: int = 2, debug: bool = False) -> list[Result]:
         """
         Searches the index for the closest matches to a query string.
 
@@ -32,8 +32,9 @@ class Pipeline:
         results = self._index.query(
             query,
             top_k=top_k,
-            min_shared_ngrams=min_shared_ngrams
+            min_shared_ngrams=min_shared_ngrams,
+            debug=debug
         )
-        
+
         return results
     
