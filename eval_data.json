@@ -1,0 +1,22 @@
+[
+    {"query": "prazozin", "expected": "prazosin"},
+    {"query": "nicotin", "expected": "nicotine"},
+    {"query": "afloxacin", "expected": "ofloxacin"},
+    {"query": "nalidisic acid", "expected": "nalidixic acid"},
+    {"query": "indomethasine", "expected": "indomethacin"},
+    {"query": "zulbactim", "expected": "sulbactam"},
+    {"query": "dazobactam", "expected": "tazobactam"},
+    {"query": "siprofloxasin", "expected": "ciprofloxacin"},
+    {"query": "norfloxasin", "expected": "norfloxacin"},
+    {"query": "amfetamine", "expected": "amphetamine"},
+    {"query": "isosorbide ninitrate", "expected": "isosorbide dinitrate"},
+    {"query": "mianzerine", "expected": "mianserin"},
+    {"query": "iniprasine", "expected": "imipramine"},
+    {"query": "indapomide", "expected": "indapamide"},
+    {"query": "flumasenil", "expected": "flumazenil"},
+    {"query": "troglitasane", "expected": "troglitazone"},
+    {"query": "bicalotomide", "expected": "bicalutamide"},
+    {"query": "diasipam", "expected": "diazepam"},
+    {"query": "metaprolol", "expected": "metoprolol"},
+    {"query": "dythylstilbestril", "expected": "diethylstilbestrol"}
+]
