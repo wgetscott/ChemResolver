@@ -21,10 +21,11 @@ class Pipeline:
         Searches the index for the closest matches to a query string.
 
         Args:
-            query:  input string to match against the index
+            query: input string to match against the index
             top_k: if set, return only the top k results
             min_shared_ngrams: minimum n-gram overlap to consider a candidate
-
+            debug: if true, populate per-component score fields on each Result
+            
         Returns:
             Ranked list of Result objects, or empty list if no matches found.
         """
