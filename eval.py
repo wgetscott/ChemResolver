@@ -1,17 +1,8 @@
-import json
 from pipeline import Pipeline
 from utils import normalise
+from utils import load_json    
 
-def load_json(path: str):
-    """
-    Utility function to read JSON files.
-    """
-
-    with open(path, "r") as f:
-        return json.load(f)
-    
-
-def evaluate(word_list: list[str], eval_data: list[dict]) -> None:
+def evaluate(word_list: list[str], eval_data: list[dict]) -> dict:
     """
     Evaluates the pipeline on a set of fuzzy query/expected match pairs.
 
@@ -51,6 +42,14 @@ def evaluate(word_list: list[str], eval_data: list[dict]) -> None:
     print(f"No results: {no_results}")
     print(f"Exact Match Accuracy: {accuracy:.2%}")
     
+    return{
+        "total": total,
+        "hits": hits,
+        "misses": misses,
+        "no_results": no_results,
+        "accuracy": accuracy,
+    }
+
 
 if __name__ == "__main__":
     word_list = load_json("word_list.json")
