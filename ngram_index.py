@@ -4,6 +4,7 @@ from ranker import score
 from utils import normalise
 from typing import Set
 from dataclasses import dataclass
+import math
 
 @dataclass
 class Result:
@@ -54,6 +55,7 @@ class NGramIndex:
         self.n = n
         self.index: dict[str, set[str]] = {} # stores words that contain a given n-gram
         self.n_gram_df: dict[str, int] = {} # document frequency of each n-gram
+
 
     def get_ngrams(self, text: str, n: int | None = None) -> Set[str]:
         """
@@ -181,13 +183,25 @@ class NGramIndex:
         for candidate in filtered_candidates:
             candidate_grams = self.get_ngrams(candidate)
 
-            # Overlap as pairwise Dice coefficient between query and candidate n-grams.
-            # Uses query grams and candidate grams only, ensuring similarity is independent of
-            # retrieval set size.
             intersection = query_grams & candidate_grams
-            denom = len(query_grams) + len(candidate_grams)
 
-            overlap = (2 * len(intersection)) / denom if denom else 0.0 
+            # Dice coefficient: ratio of shared n-grams to total n-grams across both strings.
+            # Captures breadth of overlap: how much of the query is covered by the candidate.
+            denom = len(query_grams) + len(candidate_grams)
+            dice = (2 * len(intersection)) / denom if denom else 0.0
+            
+            # TF-IDF weighted overlap: each shared n-gram contributes 1/log(df+2) rather than 1.
+            # Common n-grams (high df) are down-weighted; rarer n-grams contribute more due to their
+            # specificity.
+            tfidf_score = sum(
+                1 / math.log(self.n_gram_df.get(g, 1) + 2) 
+                for g in intersection
+            )
+            tfidf_normalised = (2 * tfidf_score) / denom if denom else 0.0
+
+            # Blend both signals equally
+            alpha = 0.5
+            overlap = alpha * dice + (1 - alpha) * tfidf_normalised
 
             # Compare query string vs candidate string
             final_score = score(clean_text, candidate, overlap=overlap)
