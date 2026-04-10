@@ -6,7 +6,7 @@ Lightweight fuzzy search engine for chemical and pharmaceutical names, designed 
 
 For example, resolving `siprofloxasin` -> `ciprofloxacin` or `diasipam` -> `diazepam`.
 
-Built from scratch in Python using a character n-gram inverted index, with no external search or ranking frameworks beyond the Python standard library and a single HTTP depdency (`requests`) for data fetching.
+Built from scratch in Python using a character n-gram inverted index, with no external search or ranking frameworks beyond the Python standard library and a single HTTP dependency (`requests`) for data fetching.
 
 ---
 
