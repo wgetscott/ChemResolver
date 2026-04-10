@@ -1,6 +1,7 @@
 import random
 import string
 from utils import load_json, save_json
+from typing import Callable
 
 PHONETIC_MAP = {
     # Common letter-sound confusions
@@ -104,14 +105,15 @@ def fuzz(word: str) -> str:
     return new_word
 
 
-def generate_eval_data(word_list: list[str]) -> list[dict]:
+def generate_eval_data(word_list: list[str], fuzz_fn: Callable[[str], str] = fuzz) -> list[dict]:
     """
     Generates fuzzy query/expected pairs from a list of chemical names.
     Each word is fuzzed once using a random transform to simulate a misspelling.
     Entries where fuzz produced no change are excluded.
     Args:
         word_list: List of drug names to generate eval pairs from
-
+        fuzz_fn: Function to apply to each word (default: fuzz)
+        
     Returns:
         list[dict]: keys 'query' and 'expected'
     """
@@ -119,7 +121,7 @@ def generate_eval_data(word_list: list[str]) -> list[dict]:
     eval_data: list[dict] = []
 
     for word in word_list:
-        query = fuzz(word)
+        query = fuzz_fn(word)
         if query != word:
             eval_data.append({"query": query, "expected": word})
 
