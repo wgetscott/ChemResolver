@@ -1,6 +1,12 @@
 from ngram_index import NGramIndex, Result
 
 class Pipeline:
+    """
+    Top-level API for the chemical name resolver.
+    Wraps NGramIndex behind a clean two-step interface:
+    build() and search().
+    """
+    
     def __init__(self, n: int = 3):
         self._index = NGramIndex(n=n)
 
