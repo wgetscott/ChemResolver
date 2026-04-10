@@ -1,5 +1,3 @@
-# Build n-gram Inverted Index
-
 from ranker import score, breakdown
 from utils import normalise
 from typing import Set
@@ -13,7 +11,7 @@ class Result:
 
     Attributes:
         word (str):
-            The matched candidate string (e.g., checmical name or entity).
+            The matched candidate string (e.g., a chemical name or entity).
 
         score (float):
             The final similarity score combining:
@@ -172,7 +170,7 @@ class NGramIndex:
             3. Retrieve candidate words from inverted index
             4. Count n-gram overlaps per candidate
             5. Score each candidate using similarity metrics
-            5. Return ranked results
+            6. Return ranked results
         """
 
         # Normalise
