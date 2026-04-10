@@ -1,8 +1,10 @@
 # ChemResolver
 
-A lightweight fuzzy search engine for pharmaceutical and chemical names. Built from scratch in Python using a character n-gram inverted index, with no external search dependencies.
+Lightweight fuzzy search engine for chemical and pharmaceutical names, designed to resolve misspellings, phonetic confusions, and transcription errors in clinical data.
 
-Designed to handle common real-world misspellings, phonetic confusions, and transcription errors common in clinical and pharmaceutical contexts. For example, resolving `siprofloxasin` -> `ciprofloxacin` or `diasipam` -> `diazepam`.
+For example, resolving `siprofloxasin` -> `ciprofloxacin` or `diasipam` -> `diazepam`.
+
+Built from scratch in Python using a character n-gram inverted index, with no external search or ranking frameworks.
 
 ---
 
@@ -155,7 +157,7 @@ Median query time: 26.733 ms
 p99 query time: 448.368 ms
 ```
 
-Average query time is higher than median due to a small number of slow outlier queries. Certain  common trigrams (e.g., `ine`, `cil`) will match a large number of candidates in a 4,005-word index, making those queries disproportionately expensive to score. Median is the more representative measure of typical performance. 
+Average query time is higher than median due to a small number of slow outlier queries. Certain common trigrams (e.g., `ine`, `cil`) will match a large number of candidates in a 4,005-word index, making those queries disproportionately expensive to score. Median is the more representative measure of typical performance. 
 
 **Note**: At 1,000 words, average and median query times were well under 5 ms.
 
@@ -168,3 +170,7 @@ results = p.search("siprofloxasin", top_k=1, debug=True)
 r = results[0]
 print(r.word, r.jaccard, r.levenshtein, r.prefix, r.tfidf)
 ```
+
+## Limitations
+- Performance degrades with very large vocabularies due to high-frequency n-grams
+- Designed for single-word queries; multi-word inputs are flattened via normalisation rather than handled as true full-text search
