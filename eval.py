@@ -1,6 +1,7 @@
 from pipeline import Pipeline
 from utils import normalise
 from utils import load_json    
+import sys
 
 def evaluate(word_list: list[str], eval_data: list[dict]) -> dict:
     """
@@ -52,7 +53,8 @@ def evaluate(word_list: list[str], eval_data: list[dict]) -> dict:
 
 
 if __name__ == "__main__":
+    data_path = sys.argv[1] if len(sys.argv) > 1 else "eval_data.json"
     word_list = load_json("word_list.json")
-    eval_data = load_json("eval_data.json")
+    eval_data = load_json(data_path)
 
     evaluate(word_list, eval_data)
