@@ -1,10 +1,12 @@
 # ChemResolver
 
+**Author:** Scott Fear
+
 Lightweight fuzzy search engine for chemical and pharmaceutical names, designed to resolve misspellings, phonetic confusions, and transcription errors in clinical data.
 
 For example, resolving `siprofloxasin` -> `ciprofloxacin` or `diasipam` -> `diazepam`.
 
-Built from scratch in Python using a character n-gram inverted index, with no external search or ranking frameworks.
+Built from scratch in Python using a character n-gram inverted index, with no external search or ranking frameworks beyond the Python standard library and a single HTTP depdency (`requests`) for data fetching.
 
 ---
 
@@ -173,4 +175,4 @@ print(r.word, r.jaccard, r.levenshtein, r.prefix, r.tfidf)
 
 ## Limitations
 - Performance degrades with very large vocabularies due to high-frequency n-grams
-- Designed for single-word queries; multi-word inputs are flattened via normalisation rather than handled as true full-text search
+- Designed for single-word queries; multi-word inputs are flattened via normalisation rather than structured as multi-token full-text search
