@@ -1,22 +1,4002 @@
 [
-    {"query": "prazozin", "expected": "prazosin"},
-    {"query": "nicotin", "expected": "nicotine"},
-    {"query": "afloxacin", "expected": "ofloxacin"},
-    {"query": "nalidisic acid", "expected": "nalidixic acid"},
-    {"query": "indomethasine", "expected": "indomethacin"},
-    {"query": "zulbactim", "expected": "sulbactam"},
-    {"query": "dazobactam", "expected": "tazobactam"},
-    {"query": "siprofloxasin", "expected": "ciprofloxacin"},
-    {"query": "norfloxasin", "expected": "norfloxacin"},
-    {"query": "amfetamine", "expected": "amphetamine"},
-    {"query": "isosorbide ninitrate", "expected": "isosorbide dinitrate"},
-    {"query": "mianzerine", "expected": "mianserin"},
-    {"query": "iniprasine", "expected": "imipramine"},
-    {"query": "indapomide", "expected": "indapamide"},
-    {"query": "flumasenil", "expected": "flumazenil"},
-    {"query": "troglitasane", "expected": "troglitazone"},
-    {"query": "bicalotomide", "expected": "bicalutamide"},
-    {"query": "diasipam", "expected": "diazepam"},
-    {"query": "metaprolol", "expected": "metoprolol"},
-    {"query": "dythylstilbestril", "expected": "diethylstilbestrol"}
+  {
+    "query": "prazospn",
+    "expected": "prazosin"
+  },
+  {
+    "query": "nicotne",
+    "expected": "nicotine"
+  },
+  {
+    "query": "ofloxaucin",
+    "expected": "ofloxacin"
+  },
+  {
+    "query": "nalidixiic acid",
+    "expected": "nalidixic acid"
+  },
+  {
+    "query": "iedomethacin",
+    "expected": "indomethacin"
+  },
+  {
+    "query": "sulbpctam",
+    "expected": "sulbactam"
+  },
+  {
+    "query": "tazobaktam",
+    "expected": "tazobactam"
+  },
+  {
+    "query": "ciprofloxcain",
+    "expected": "ciprofloxacin"
+  },
+  {
+    "query": "norffloxacin",
+    "expected": "norfloxacin"
+  },
+  {
+    "query": "ampetamine",
+    "expected": "amphetamine"
+  },
+  {
+    "query": "isosorbide dinitprate",
+    "expected": "isosorbide dinitrate"
+  },
+  {
+    "query": "mianlerin",
+    "expected": "mianserin"
+  },
+  {
+    "query": "imiprmamine",
+    "expected": "imipramine"
+  },
+  {
+    "query": "indapmaide",
+    "expected": "indapamide"
+  },
+  {
+    "query": "flkmazenil",
+    "expected": "flumazenil"
+  },
+  {
+    "query": "trolitazone",
+    "expected": "troglitazone"
+  },
+  {
+    "query": "biaclutamide",
+    "expected": "bicalutamide"
+  },
+  {
+    "query": "diazpam",
+    "expected": "diazepam"
+  },
+  {
+    "query": "metoprslol",
+    "expected": "metoprolol"
+  },
+  {
+    "query": "ditehylstilbestrol",
+    "expected": "diethylstilbestrol"
+  },
+  {
+    "query": "mecamjylamine",
+    "expected": "mecamylamine"
+  },
+  {
+    "query": "crabachol",
+    "expected": "carbachol"
+  },
+  {
+    "query": "fenytoin",
+    "expected": "phenytoin"
+  },
+  {
+    "query": "siroimus",
+    "expected": "sirolimus"
+  },
+  {
+    "query": "taczolimus anhydrous",
+    "expected": "tacrolimus anhydrous"
+  },
+  {
+    "query": "clompramine",
+    "expected": "clomipramine"
+  },
+  {
+    "query": "metohxsalen",
+    "expected": "methoxsalen"
+  },
+  {
+    "query": "dichlorphexamide",
+    "expected": "dichlorphenamide"
+  },
+  {
+    "query": "ethoxzloamide",
+    "expected": "ethoxzolamide"
+  },
+  {
+    "query": "epirubikin",
+    "expected": "epirubicin"
+  },
+  {
+    "query": "methasolamide",
+    "expected": "methazolamide"
+  },
+  {
+    "query": "acetasolamide",
+    "expected": "acetazolamide"
+  },
+  {
+    "query": "afenide",
+    "expected": "mafenide"
+  },
+  {
+    "query": "sulafnilamide",
+    "expected": "sulfanilamide"
+  },
+  {
+    "query": "guanabez",
+    "expected": "guanabenz"
+  },
+  {
+    "query": "rimethoprim",
+    "expected": "trimethoprim"
+  },
+  {
+    "query": "veapamil",
+    "expected": "verapamil"
+  },
+  {
+    "query": "sulfaaslazine",
+    "expected": "sulfasalazine"
+  },
+  {
+    "query": "couwmarin",
+    "expected": "coumarin"
+  },
+  {
+    "query": "diliazem",
+    "expected": "diltiazem"
+  },
+  {
+    "query": "atenolo",
+    "expected": "atenolol"
+  },
+  {
+    "query": "aspiri",
+    "expected": "aspirin"
+  },
+  {
+    "query": "triluoperazine",
+    "expected": "trifluoperazine"
+  },
+  {
+    "query": "betaxoloc",
+    "expected": "betaxolol"
+  },
+  {
+    "query": "olfsalazine",
+    "expected": "olsalazine"
+  },
+  {
+    "query": "proprnolol",
+    "expected": "propranolol"
+  },
+  {
+    "query": "practobol",
+    "expected": "practolol"
+  },
+  {
+    "query": "mcehlorethamine",
+    "expected": "mechlorethamine"
+  },
+  {
+    "query": "penicilln g",
+    "expected": "penicillin g"
+  },
+  {
+    "query": "trovafloksacin",
+    "expected": "trovafloxacin"
+  },
+  {
+    "query": "imetidine",
+    "expected": "cimetidine"
+  },
+  {
+    "query": "gatifloxaicn",
+    "expected": "gatifloxacin"
+  },
+  {
+    "query": "laxbetalol",
+    "expected": "labetalol"
+  },
+  {
+    "query": "moxiflxacin",
+    "expected": "moxifloxacin"
+  },
+  {
+    "query": "levofloxacgin anhydrous",
+    "expected": "levofloxacin anhydrous"
+  },
+  {
+    "query": "gemifsoxacin",
+    "expected": "gemifloxacin"
+  },
+  {
+    "query": "spiapril",
+    "expected": "spirapril"
+  },
+  {
+    "query": "valproates odium",
+    "expected": "valproate sodium"
+  },
+  {
+    "query": "isoporterenol",
+    "expected": "isoproterenol"
+  },
+  {
+    "query": "hydrochlorothiazidew",
+    "expected": "hydrochlorothiazide"
+  },
+  {
+    "query": "frosemide",
+    "expected": "furosemide"
+  },
+  {
+    "query": "pyrimethvmine",
+    "expected": "pyrimethamine"
+  },
+  {
+    "query": "tolresftat",
+    "expected": "tolrestat"
+  },
+  {
+    "query": "uslfathiazole",
+    "expected": "sulfathiazole"
+  },
+  {
+    "query": "zulfamerazine",
+    "expected": "sulfamerazine"
+  },
+  {
+    "query": "sulfadazine",
+    "expected": "sulfadiazine"
+  },
+  {
+    "query": "thiamylla",
+    "expected": "thiamylal"
+  },
+  {
+    "query": "htiopental",
+    "expected": "thiopental"
+  },
+  {
+    "query": "cyclobaibital",
+    "expected": "cyclobarbital"
+  },
+  {
+    "query": "ergotamie",
+    "expected": "ergotamine"
+  },
+  {
+    "query": "tretinyoin",
+    "expected": "tretinoin"
+  },
+  {
+    "query": "methohexiatal",
+    "expected": "methohexital"
+  },
+  {
+    "query": "hpenobarbital",
+    "expected": "phenobarbital"
+  },
+  {
+    "query": "fluoksetine",
+    "expected": "fluoxetine"
+  },
+  {
+    "query": "slufamethoxazole",
+    "expected": "sulfamethoxazole"
+  },
+  {
+    "query": "closapine",
+    "expected": "clozapine"
+  },
+  {
+    "query": "nokrtriptyline",
+    "expected": "nortriptyline"
+  },
+  {
+    "query": "sulfamithazine",
+    "expected": "sulfamethazine"
+  },
+  {
+    "query": "sekobarbital",
+    "expected": "secobarbital"
+  },
+  {
+    "query": "pentobarbitapl",
+    "expected": "pentobarbital"
+  },
+  {
+    "query": "quinakrine",
+    "expected": "quinacrine"
+  },
+  {
+    "query": "amobarbitla",
+    "expected": "amobarbital"
+  },
+  {
+    "query": "hexobrabital",
+    "expected": "hexobarbital"
+  },
+  {
+    "query": "butabarjbital",
+    "expected": "butabarbital"
+  },
+  {
+    "query": "aprobrabital",
+    "expected": "aprobarbital"
+  },
+  {
+    "query": "mxtharbital",
+    "expected": "metharbital"
+  },
+  {
+    "query": "chlordizaepoxide",
+    "expected": "chlordiazepoxide"
+  },
+  {
+    "query": "melagtaran",
+    "expected": "melagatran"
+  },
+  {
+    "query": "clobnazepam",
+    "expected": "clonazepam"
+  },
+  {
+    "query": "sulfisoxasole",
+    "expected": "sulfisoxazole"
+  },
+  {
+    "query": "sulframethoxypyridazine",
+    "expected": "sulfamethoxypyridazine"
+  },
+  {
+    "query": "bualbital",
+    "expected": "butalbital"
+  },
+  {
+    "query": "sulgfacetamide",
+    "expected": "sulfacetamide"
+  },
+  {
+    "query": "amsacrin",
+    "expected": "amsacrine"
+  },
+  {
+    "query": "ethcarynic acid",
+    "expected": "ethacrynic acid"
+  },
+  {
+    "query": "ticrynayfen",
+    "expected": "ticrynafen"
+  },
+  {
+    "query": "gemfibrozi",
+    "expected": "gemfibrozil"
+  },
+  {
+    "query": "melxtonin",
+    "expected": "melatonin"
+  },
+  {
+    "query": "ondaznsetron",
+    "expected": "ondansetron"
+  },
+  {
+    "query": "busprione",
+    "expected": "buspirone"
+  },
+  {
+    "query": "methyldqopa",
+    "expected": "methyldopa"
+  },
+  {
+    "query": "molimndone",
+    "expected": "molindone"
+  },
+  {
+    "query": "apomorphien",
+    "expected": "apomorphine"
+  },
+  {
+    "query": "haloperidolr",
+    "expected": "haloperidol"
+  },
+  {
+    "query": "penztamidine",
+    "expected": "pentamidine"
+  },
+  {
+    "query": "amiinohippuric acid",
+    "expected": "aminohippuric acid"
+  },
+  {
+    "query": "etretinatek",
+    "expected": "etretinate"
+  },
+  {
+    "query": "neviraine",
+    "expected": "nevirapine"
+  },
+  {
+    "query": "dronabnol",
+    "expected": "dronabinol"
+  },
+  {
+    "query": "itoxantrone",
+    "expected": "mitoxantrone"
+  },
+  {
+    "query": "dopmaine",
+    "expected": "dopamine"
+  },
+  {
+    "query": "hydroyurea",
+    "expected": "hydroxyurea"
+  },
+  {
+    "query": "poduofilox",
+    "expected": "podofilox"
+  },
+  {
+    "query": "isoniasid",
+    "expected": "isoniazid"
+  },
+  {
+    "query": "thalidnomide",
+    "expected": "thalidomide"
+  },
+  {
+    "query": "ketroolac",
+    "expected": "ketorolac"
+  },
+  {
+    "query": "stoalol",
+    "expected": "sotalol"
+  },
+  {
+    "query": "gylburide",
+    "expected": "glyburide"
+  },
+  {
+    "query": "hexestol",
+    "expected": "hexestrol"
+  },
+  {
+    "query": "doftilide",
+    "expected": "dofetilide"
+  },
+  {
+    "query": "dacarbazin",
+    "expected": "dacarbazine"
+  },
+  {
+    "query": "adenosie",
+    "expected": "adenosine"
+  },
+  {
+    "query": "thiokridazine",
+    "expected": "thioridazine"
+  },
+  {
+    "query": "ilansoprazole",
+    "expected": "lansoprazole"
+  },
+  {
+    "query": "irinotecwn",
+    "expected": "irinotecan"
+  },
+  {
+    "query": "morphirne",
+    "expected": "morphine"
+  },
+  {
+    "query": "codeie",
+    "expected": "codeine"
+  },
+  {
+    "query": "chmorpromazine",
+    "expected": "chlorpromazine"
+  },
+  {
+    "query": "desipramin",
+    "expected": "desipramine"
+  },
+  {
+    "query": "nminoglutethimide",
+    "expected": "aminoglutethimide"
+  },
+  {
+    "query": "cromolyn sodaum",
+    "expected": "cromolyn sodium"
+  },
+  {
+    "query": "tchloroquine",
+    "expected": "chloroquine"
+  },
+  {
+    "query": "paroxetinze",
+    "expected": "paroxetine"
+  },
+  {
+    "query": "etoricoxiub",
+    "expected": "etoricoxib"
+  },
+  {
+    "query": "lidokaine",
+    "expected": "lidocaine"
+  },
+  {
+    "query": "etidocainje",
+    "expected": "etidocaine"
+  },
+  {
+    "query": "naloxon",
+    "expected": "naloxone"
+  },
+  {
+    "query": "raloksifene",
+    "expected": "raloxifene"
+  },
+  {
+    "query": "tamoxicen",
+    "expected": "tamoxifen"
+  },
+  {
+    "query": "bomocriptine",
+    "expected": "bromocriptine"
+  },
+  {
+    "query": "ilopost",
+    "expected": "iloprost"
+  },
+  {
+    "query": "topotekan",
+    "expected": "topotecan"
+  },
+  {
+    "query": "rispeidone",
+    "expected": "risperidone"
+  },
+  {
+    "query": "cromoltn",
+    "expected": "cromolyn"
+  },
+  {
+    "query": "metoclophamide",
+    "expected": "metoclopramide"
+  },
+  {
+    "query": "paklitaxel",
+    "expected": "paclitaxel"
+  },
+  {
+    "query": "alzrostadil",
+    "expected": "alprostadil"
+  },
+  {
+    "query": "hwxachlorophene",
+    "expected": "hexachlorophene"
+  },
+  {
+    "query": "clroquinol",
+    "expected": "clioquinol"
+  },
+  {
+    "query": "pagomelatine",
+    "expected": "agomelatine"
+  },
+  {
+    "query": "cycolphosphamide anhydrous",
+    "expected": "cyclophosphamide anhydrous"
+  },
+  {
+    "query": "chlorpropamid",
+    "expected": "chlorpropamide"
+  },
+  {
+    "query": "timollo",
+    "expected": "timolol"
+  },
+  {
+    "query": "pindalol",
+    "expected": "pindolol"
+  },
+  {
+    "query": "cisplatni",
+    "expected": "cisplatin"
+  },
+  {
+    "query": "hydralazinl",
+    "expected": "hydralazine"
+  },
+  {
+    "query": "amphetamne sulfate",
+    "expected": "amphetamine sulfate"
+  },
+  {
+    "query": "amfotericin b",
+    "expected": "amphotericin b"
+  },
+  {
+    "query": "kistamine",
+    "expected": "histamine"
+  },
+  {
+    "query": "miocnazole",
+    "expected": "miconazole"
+  },
+  {
+    "query": "docetaxel anhydous",
+    "expected": "docetaxel anhydrous"
+  },
+  {
+    "query": "sileuton",
+    "expected": "zileuton"
+  },
+  {
+    "query": "tcrine",
+    "expected": "tacrine"
+  },
+  {
+    "query": "donepesil",
+    "expected": "donepezil"
+  },
+  {
+    "query": "lovasatin",
+    "expected": "lovastatin"
+  },
+  {
+    "query": "ozagrl",
+    "expected": "ozagrel"
+  },
+  {
+    "query": "aketanilide",
+    "expected": "acetanilide"
+  },
+  {
+    "query": "diimethyl sulfoxide",
+    "expected": "dimethyl sulfoxide"
+  },
+  {
+    "query": "chlorphenisamine",
+    "expected": "chlorpheniramine"
+  },
+  {
+    "query": "primaquin",
+    "expected": "primaquine"
+  },
+  {
+    "query": "meclofenamic acis",
+    "expected": "meclofenamic acid"
+  },
+  {
+    "query": "pyriyamine",
+    "expected": "pyrilamine"
+  },
+  {
+    "query": "ertindole",
+    "expected": "sertindole"
+  },
+  {
+    "query": "yarmustine",
+    "expected": "carmustine"
+  },
+  {
+    "query": "lomustin",
+    "expected": "lomustine"
+  },
+  {
+    "query": "klorambucil",
+    "expected": "chlorambucil"
+  },
+  {
+    "query": "cyroheptadine",
+    "expected": "cyproheptadine"
+  },
+  {
+    "query": "ianamrinone",
+    "expected": "inamrinone"
+  },
+  {
+    "query": "disopyramid",
+    "expected": "disopyramide"
+  },
+  {
+    "query": "vorinastat",
+    "expected": "vorinostat"
+  },
+  {
+    "query": "ibuprlofen",
+    "expected": "ibuprofen"
+  },
+  {
+    "query": "clomtacin",
+    "expected": "clometacin"
+  },
+  {
+    "query": "flunitrazpeam",
+    "expected": "flunitrazepam"
+  },
+  {
+    "query": "methoksamine",
+    "expected": "methoxamine"
+  },
+  {
+    "query": "propofbol",
+    "expected": "propofol"
+  },
+  {
+    "query": "piroxikam",
+    "expected": "piroxicam"
+  },
+  {
+    "query": "ceftizoexime",
+    "expected": "ceftizoxime"
+  },
+  {
+    "query": "phenyblutazone",
+    "expected": "phenylbutazone"
+  },
+  {
+    "query": "azithromacin",
+    "expected": "azithromycin"
+  },
+  {
+    "query": "amdibocillin",
+    "expected": "amdinocillin"
+  },
+  {
+    "query": "pegrolide",
+    "expected": "pergolide"
+  },
+  {
+    "query": "rythromycin",
+    "expected": "erythromycin"
+  },
+  {
+    "query": "ubutilide",
+    "expected": "ibutilide"
+  },
+  {
+    "query": "porgesterone",
+    "expected": "progesterone"
+  },
+  {
+    "query": "keottifen",
+    "expected": "ketotifen"
+  },
+  {
+    "query": "scnitinib",
+    "expected": "sunitinib"
+  },
+  {
+    "query": "yhdroquinone",
+    "expected": "hydroquinone"
+  },
+  {
+    "query": "aceti acid",
+    "expected": "acetic acid"
+  },
+  {
+    "query": "pehnol",
+    "expected": "phenol"
+  },
+  {
+    "query": "mequnol",
+    "expected": "mequinol"
+  },
+  {
+    "query": "clobrimazole",
+    "expected": "clotrimazole"
+  },
+  {
+    "query": "mitomycni",
+    "expected": "mitomycin"
+  },
+  {
+    "query": "alohol",
+    "expected": "alcohol"
+  },
+  {
+    "query": "pxprenolol",
+    "expected": "oxprenolol"
+  },
+  {
+    "query": "lfuconazole",
+    "expected": "fluconazole"
+  },
+  {
+    "query": "isotretivoin",
+    "expected": "isotretinoin"
+  },
+  {
+    "query": "ilopenidone",
+    "expected": "iloperidone"
+  },
+  {
+    "query": "drnoprostone",
+    "expected": "dinoprostone"
+  },
+  {
+    "query": "nesstigmine",
+    "expected": "neostigmine"
+  },
+  {
+    "query": "reboxetin",
+    "expected": "reboxetine"
+  },
+  {
+    "query": "citalorpam",
+    "expected": "citalopram"
+  },
+  {
+    "query": "pliocarpine",
+    "expected": "pilocarpine"
+  },
+  {
+    "query": "clochicine",
+    "expected": "colchicine"
+  },
+  {
+    "query": "erlotinibh",
+    "expected": "erlotinib"
+  },
+  {
+    "query": "lapatini",
+    "expected": "lapatinib"
+  },
+  {
+    "query": "arbamazepine",
+    "expected": "carbamazepine"
+  },
+  {
+    "query": "valproik acid",
+    "expected": "valproic acid"
+  },
+  {
+    "query": "temafloxabcin",
+    "expected": "temafloxacin"
+  },
+  {
+    "query": "bensnidazole",
+    "expected": "benznidazole"
+  },
+  {
+    "query": "edferoxamine",
+    "expected": "deferoxamine"
+  },
+  {
+    "query": "mexiaetine",
+    "expected": "mexiletine"
+  },
+  {
+    "query": "dextrothyroxjne",
+    "expected": "dextrothyroxine"
+  },
+  {
+    "query": "rimpnabant",
+    "expected": "rimonabant"
+  },
+  {
+    "query": "nomfensine",
+    "expected": "nomifensine"
+  },
+  {
+    "query": "lomefloxacn",
+    "expected": "lomefloxacin"
+  },
+  {
+    "query": "grisofulvin",
+    "expected": "griseofulvin"
+  },
+  {
+    "query": "falurbiprofen",
+    "expected": "flurbiprofen"
+  },
+  {
+    "query": "promaziwe",
+    "expected": "promazine"
+  },
+  {
+    "query": "clofivbrate",
+    "expected": "clofibrate"
+  },
+  {
+    "query": "aetaminophen",
+    "expected": "acetaminophen"
+  },
+  {
+    "query": "caffeihne",
+    "expected": "caffeine"
+  },
+  {
+    "query": "phdnacetin",
+    "expected": "phenacetin"
+  },
+  {
+    "query": "perpheazine",
+    "expected": "perphenazine"
+  },
+  {
+    "query": "oxazpeam",
+    "expected": "oxazepam"
+  },
+  {
+    "query": "dsulindac",
+    "expected": "sulindac"
+  },
+  {
+    "query": "fneclofenac",
+    "expected": "fenclofenac"
+  },
+  {
+    "query": "idnalpine",
+    "expected": "indalpine"
+  },
+  {
+    "query": "prohaine",
+    "expected": "procaine"
+  },
+  {
+    "query": "triflurpomazine",
+    "expected": "triflupromazine"
+  },
+  {
+    "query": "kteoprofen",
+    "expected": "ketoprofen"
+  },
+  {
+    "query": "nitrofuraantoin",
+    "expected": "nitrofurantoin"
+  },
+  {
+    "query": "indorpofen",
+    "expected": "indoprofen"
+  },
+  {
+    "query": "linadne",
+    "expected": "lindane"
+  },
+  {
+    "query": "nicain",
+    "expected": "niacin"
+  },
+  {
+    "query": "mehicillin",
+    "expected": "methicillin"
+  },
+  {
+    "query": "trichlrooethane",
+    "expected": "trichloroethane"
+  },
+  {
+    "query": "enalaprilats anhydrous",
+    "expected": "enalaprilat anhydrous"
+  },
+  {
+    "query": "eanlapril",
+    "expected": "enalapril"
+  },
+  {
+    "query": "lorasepam",
+    "expected": "lorazepam"
+  },
+  {
+    "query": "isopropyl alkohol",
+    "expected": "isopropyl alcohol"
+  },
+  {
+    "query": "grepafloxcain",
+    "expected": "grepafloxacin"
+  },
+  {
+    "query": "sakwinavir",
+    "expected": "saquinavir"
+  },
+  {
+    "query": "indnavir anhydrous",
+    "expected": "indinavir anhydrous"
+  },
+  {
+    "query": "nelfinavri",
+    "expected": "nelfinavir"
+  },
+  {
+    "query": "amprenavior",
+    "expected": "amprenavir"
+  },
+  {
+    "query": "trviamterene",
+    "expected": "triamterene"
+  },
+  {
+    "query": "pronetlaol",
+    "expected": "pronetalol"
+  },
+  {
+    "query": "celecoxbi",
+    "expected": "celecoxib"
+  },
+  {
+    "query": "trimtrexate",
+    "expected": "trimetrexate"
+  },
+  {
+    "query": "fenolopam",
+    "expected": "fenoldopam"
+  },
+  {
+    "query": "rpopinirole",
+    "expected": "ropinirole"
+  },
+  {
+    "query": "menadionfe",
+    "expected": "menadione"
+  },
+  {
+    "query": "ethklorvynol",
+    "expected": "ethchlorvynol"
+  },
+  {
+    "query": "terfeandine",
+    "expected": "terfenadine"
+  },
+  {
+    "query": "levoprhanol",
+    "expected": "levorphanol"
+  },
+  {
+    "query": "dealvirdine",
+    "expected": "delavirdine"
+  },
+  {
+    "query": "emedastin",
+    "expected": "emedastine"
+  },
+  {
+    "query": "pijglitazone",
+    "expected": "pioglitazone"
+  },
+  {
+    "query": "fentaynl",
+    "expected": "fentanyl"
+  },
+  {
+    "query": "rosiglitasone",
+    "expected": "rosiglitazone"
+  },
+  {
+    "query": "maralixibat shloride",
+    "expected": "maralixibat chloride"
+  },
+  {
+    "query": "lofexidin",
+    "expected": "lofexidine"
+  },
+  {
+    "query": "phentoalmine",
+    "expected": "phentolamine"
+  },
+  {
+    "query": "vplerixafor",
+    "expected": "plerixafor"
+  },
+  {
+    "query": "toloksatone",
+    "expected": "toloxatone"
+  },
+  {
+    "query": "meloxiam",
+    "expected": "meloxicam"
+  },
+  {
+    "query": "atcetylcysteine",
+    "expected": "acetylcysteine"
+  },
+  {
+    "query": "aminolwevulinic acid",
+    "expected": "aminolevulinic acid"
+  },
+  {
+    "query": "cysteamnie",
+    "expected": "cysteamine"
+  },
+  {
+    "query": "naltreksone",
+    "expected": "naltrexone"
+  },
+  {
+    "query": "zafirukast",
+    "expected": "zafirlukast"
+  },
+  {
+    "query": "chefprozil anhydrous, (e)-",
+    "expected": "cefprozil anhydrous, (e)-"
+  },
+  {
+    "query": "rofecoxibw",
+    "expected": "rofecoxib"
+  },
+  {
+    "query": "moxonidin",
+    "expected": "moxonidine"
+  },
+  {
+    "query": "curic sulfate",
+    "expected": "cupric sulfate"
+  },
+  {
+    "query": "procainamide hdyrochloride",
+    "expected": "procainamide hydrochloride"
+  },
+  {
+    "query": "miszoprostol",
+    "expected": "misoprostol"
+  },
+  {
+    "query": "makimorelin",
+    "expected": "macimorelin"
+  },
+  {
+    "query": "meperdiine",
+    "expected": "meperidine"
+  },
+  {
+    "query": "methakwalone",
+    "expected": "methaqualone"
+  },
+  {
+    "query": "probucokl",
+    "expected": "probucol"
+  },
+  {
+    "query": "loxvprofen",
+    "expected": "loxoprofen"
+  },
+  {
+    "query": "trientigne",
+    "expected": "trientine"
+  },
+  {
+    "query": "zxomepirac",
+    "expected": "zomepirac"
+  },
+  {
+    "query": "terqzosin",
+    "expected": "terazosin"
+  },
+  {
+    "query": "levamfetamin",
+    "expected": "levamfetamine"
+  },
+  {
+    "query": "dextqoamphetamine",
+    "expected": "dextroamphetamine"
+  },
+  {
+    "query": "sitaxentmn",
+    "expected": "sitaxentan"
+  },
+  {
+    "query": "yprazinamide",
+    "expected": "pyrazinamide"
+  },
+  {
+    "query": "ibudilst",
+    "expected": "ibudilast"
+  },
+  {
+    "query": "sauqinavir mesylate",
+    "expected": "saquinavir mesylate"
+  },
+  {
+    "query": "peincillin v",
+    "expected": "penicillin v"
+  },
+  {
+    "query": "cepehalothin",
+    "expected": "cephalothin"
+  },
+  {
+    "query": "xmiltefosine",
+    "expected": "miltefosine"
+  },
+  {
+    "query": "lincezolid",
+    "expected": "linezolid"
+  },
+  {
+    "query": "klidinium",
+    "expected": "clidinium"
+  },
+  {
+    "query": "mropenem",
+    "expected": "meropenem"
+  },
+  {
+    "query": "trzaodone",
+    "expected": "trazodone"
+  },
+  {
+    "query": "etodolak",
+    "expected": "etodolac"
+  },
+  {
+    "query": "pralnukast",
+    "expected": "pranlukast"
+  },
+  {
+    "query": "nefasodone",
+    "expected": "nefazodone"
+  },
+  {
+    "query": "thiabendanzole",
+    "expected": "thiabendazole"
+  },
+  {
+    "query": "xanzmeline",
+    "expected": "xanomeline"
+  },
+  {
+    "query": "naftfine",
+    "expected": "naftifine"
+  },
+  {
+    "query": "pentoxifylilne",
+    "expected": "pentoxifylline"
+  },
+  {
+    "query": "amtriptyline",
+    "expected": "amitriptyline"
+  },
+  {
+    "query": "dirbomsalan",
+    "expected": "dibromsalan"
+  },
+  {
+    "query": "tribromsalanu",
+    "expected": "tribromsalan"
+  },
+  {
+    "query": "sumatripdtan",
+    "expected": "sumatriptan"
+  },
+  {
+    "query": "propaferone",
+    "expected": "propafenone"
+  },
+  {
+    "query": "betamtehasone",
+    "expected": "betamethasone"
+  },
+  {
+    "query": "maiodarone",
+    "expected": "amiodarone"
+  },
+  {
+    "query": "alfentail",
+    "expected": "alfentanil"
+  },
+  {
+    "query": "prednisonre",
+    "expected": "prednisone"
+  },
+  {
+    "query": "rivajtigmine",
+    "expected": "rivastigmine"
+  },
+  {
+    "query": "venlafaxene",
+    "expected": "venlafaxine"
+  },
+  {
+    "query": "zidovudiie",
+    "expected": "zidovudine"
+  },
+  {
+    "query": "oriconazole",
+    "expected": "voriconazole"
+  },
+  {
+    "query": "aazelastine",
+    "expected": "azelastine"
+  },
+  {
+    "query": "cnhloramphenicol",
+    "expected": "chloramphenicol"
+  },
+  {
+    "query": "porcainamide",
+    "expected": "procainamide"
+  },
+  {
+    "query": "atomoksetine",
+    "expected": "atomoxetine"
+  },
+  {
+    "query": "acebuoolol",
+    "expected": "acebutolol"
+  },
+  {
+    "query": "promthazine",
+    "expected": "promethazine"
+  },
+  {
+    "query": "prednisolons",
+    "expected": "prednisolone"
+  },
+  {
+    "query": "triipramine",
+    "expected": "trimipramine"
+  },
+  {
+    "query": "bisopralol",
+    "expected": "bisoprolol"
+  },
+  {
+    "query": "triazoalm",
+    "expected": "triazolam"
+  },
+  {
+    "query": "apraclonidin",
+    "expected": "apraclonidine"
+  },
+  {
+    "query": "ccylizine",
+    "expected": "cyclizine"
+  },
+  {
+    "query": "nebivolcol",
+    "expected": "nebivolol"
+  },
+  {
+    "query": "mehtylprednisolone",
+    "expected": "methylprednisolone"
+  },
+  {
+    "query": "metadone",
+    "expected": "methadone"
+  },
+  {
+    "query": "flevcainide",
+    "expected": "flecainide"
+  },
+  {
+    "query": "cloniodine",
+    "expected": "clonidine"
+  },
+  {
+    "query": "mirtazapne",
+    "expected": "mirtazapine"
+  },
+  {
+    "query": "midlazolam",
+    "expected": "midazolam"
+  },
+  {
+    "query": "remoxipkide",
+    "expected": "remoxipride"
+  },
+  {
+    "query": "oxycodne",
+    "expected": "oxycodone"
+  },
+  {
+    "query": "estradol",
+    "expected": "estradiol"
+  },
+  {
+    "query": "diphnehydramine",
+    "expected": "diphenhydramine"
+  },
+  {
+    "query": "ufentanil",
+    "expected": "sufentanil"
+  },
+  {
+    "query": "galantmaine",
+    "expected": "galantamine"
+  },
+  {
+    "query": "amnatadine",
+    "expected": "amantadine"
+  },
+  {
+    "query": "aplrazolam",
+    "expected": "alprazolam"
+  },
+  {
+    "query": "maprtoiline",
+    "expected": "maprotiline"
+  },
+  {
+    "query": "fosaarnet",
+    "expected": "foscarnet"
+  },
+  {
+    "query": "acetylcxoline",
+    "expected": "acetylcholine"
+  },
+  {
+    "query": "metronidazal",
+    "expected": "metronidazole"
+  },
+  {
+    "query": "protriptylinwe",
+    "expected": "protriptyline"
+  },
+  {
+    "query": "cyclobenzaprne",
+    "expected": "cyclobenzaprine"
+  },
+  {
+    "query": "thitepa",
+    "expected": "thiotepa"
+  },
+  {
+    "query": "fenofirbate",
+    "expected": "fenofibrate"
+  },
+  {
+    "query": "pargylin",
+    "expected": "pargyline"
+  },
+  {
+    "query": "alendonate sodium",
+    "expected": "alendronate sodium"
+  },
+  {
+    "query": "levonoirdefrin",
+    "expected": "levonordefrin"
+  },
+  {
+    "query": "epiiephrine",
+    "expected": "epinephrine"
+  },
+  {
+    "query": "cefaclor tanhydrous",
+    "expected": "cefaclor anhydrous"
+  },
+  {
+    "query": "etmoidate",
+    "expected": "etomidate"
+  },
+  {
+    "query": "arodiaquine",
+    "expected": "amodiaquine"
+  },
+  {
+    "query": "diethylcarbazazine",
+    "expected": "diethylcarbamazine"
+  },
+  {
+    "query": "mebnedazole",
+    "expected": "mebendazole"
+  },
+  {
+    "query": "diclofena",
+    "expected": "diclofenac"
+  },
+  {
+    "query": "metenamic acid",
+    "expected": "mefenamic acid"
+  },
+  {
+    "query": "fentauyl citrate",
+    "expected": "fentanyl citrate"
+  },
+  {
+    "query": "manniotl",
+    "expected": "mannitol"
+  },
+  {
+    "query": "prhvastatin sodium",
+    "expected": "pravastatin sodium"
+  },
+  {
+    "query": "prenylaminde",
+    "expected": "prenylamine"
+  },
+  {
+    "query": "ethnyl estradiol",
+    "expected": "ethinyl estradiol"
+  },
+  {
+    "query": "dalfampridin",
+    "expected": "dalfampridine"
+  },
+  {
+    "query": "lycerin",
+    "expected": "glycerin"
+  },
+  {
+    "query": "trimethadoine",
+    "expected": "trimethadione"
+  },
+  {
+    "query": "etgosuximide",
+    "expected": "ethosuximide"
+  },
+  {
+    "query": "mwthsuximide",
+    "expected": "methsuximide"
+  },
+  {
+    "query": "tetrcaaine",
+    "expected": "tetracaine"
+  },
+  {
+    "query": "sulfapyridinea",
+    "expected": "sulfapyridine"
+  },
+  {
+    "query": "baklofen",
+    "expected": "baclofen"
+  },
+  {
+    "query": "ppperacillin",
+    "expected": "piperacillin"
+  },
+  {
+    "query": "suxamethonius",
+    "expected": "suxamethonium"
+  },
+  {
+    "query": "mesalamin",
+    "expected": "mesalamine"
+  },
+  {
+    "query": "alirretinoin",
+    "expected": "alitretinoin"
+  },
+  {
+    "query": "ketyl alcohol",
+    "expected": "cetyl alcohol"
+  },
+  {
+    "query": "siodosin",
+    "expected": "silodosin"
+  },
+  {
+    "query": "choline cholride",
+    "expected": "choline chloride"
+  },
+  {
+    "query": "doxazoiin",
+    "expected": "doxazosin"
+  },
+  {
+    "query": "vandetnib",
+    "expected": "vandetanib"
+  },
+  {
+    "query": "minapirne",
+    "expected": "minaprine"
+  },
+  {
+    "query": "tadibarotene",
+    "expected": "tamibarotene"
+  },
+  {
+    "query": "ziprasidqne",
+    "expected": "ziprasidone"
+  },
+  {
+    "query": "alfuzoscin",
+    "expected": "alfuzosin"
+  },
+  {
+    "query": "finasjeride",
+    "expected": "finasteride"
+  },
+  {
+    "query": "phneindione",
+    "expected": "phenindione"
+  },
+  {
+    "query": "anisindoine",
+    "expected": "anisindione"
+  },
+  {
+    "query": "entecavrr anhydrous",
+    "expected": "entecavir anhydrous"
+  },
+  {
+    "query": "lamiuvdine",
+    "expected": "lamivudine"
+  },
+  {
+    "query": "labuterol",
+    "expected": "albuterol"
+  },
+  {
+    "query": "olanzapnie",
+    "expected": "olanzapine"
+  },
+  {
+    "query": "queuiapine",
+    "expected": "quetiapine"
+  },
+  {
+    "query": "medroxyprogesterone acette",
+    "expected": "medroxyprogesterone acetate"
+  },
+  {
+    "query": "mupirociw",
+    "expected": "mupirocin"
+  },
+  {
+    "query": "benzyla lcohol",
+    "expected": "benzyl alcohol"
+  },
+  {
+    "query": "propphenazone",
+    "expected": "propyphenazone"
+  },
+  {
+    "query": "carvediol",
+    "expected": "carvedilol"
+  },
+  {
+    "query": "flufenazine",
+    "expected": "fluphenazine"
+  },
+  {
+    "query": "thioxguanine",
+    "expected": "thioguanine"
+  },
+  {
+    "query": "dilevlol",
+    "expected": "dilevalol"
+  },
+  {
+    "query": "prochlorperazien",
+    "expected": "prochlorperazine"
+  },
+  {
+    "query": "lopiavir",
+    "expected": "lopinavir"
+  },
+  {
+    "query": "nitroglycrein",
+    "expected": "nitroglycerin"
+  },
+  {
+    "query": "acetohidroxamic acid",
+    "expected": "acetohydroxamic acid"
+  },
+  {
+    "query": "thiopental sofdium",
+    "expected": "thiopental sodium"
+  },
+  {
+    "query": "methoheksital sodium",
+    "expected": "methohexital sodium"
+  },
+  {
+    "query": "lamotrigin",
+    "expected": "lamotrigine"
+  },
+  {
+    "query": "ketamien",
+    "expected": "ketamine"
+  },
+  {
+    "query": "riluzoe",
+    "expected": "riluzole"
+  },
+  {
+    "query": "nedoromil",
+    "expected": "nedocromil"
+  },
+  {
+    "query": "pralidoxme chloride",
+    "expected": "pralidoxime chloride"
+  },
+  {
+    "query": "znoisamide",
+    "expected": "zonisamide"
+  },
+  {
+    "query": "adenoine phosphate",
+    "expected": "adenosine phosphate"
+  },
+  {
+    "query": "phenoyxbenzamine",
+    "expected": "phenoxybenzamine"
+  },
+  {
+    "query": "foscarnets odium",
+    "expected": "foscarnet sodium"
+  },
+  {
+    "query": "anargelide",
+    "expected": "anagrelide"
+  },
+  {
+    "query": "napazoline",
+    "expected": "naphazoline"
+  },
+  {
+    "query": "oxymetadzoline",
+    "expected": "oxymetazoline"
+  },
+  {
+    "query": "guanethidin",
+    "expected": "guanethidine"
+  },
+  {
+    "query": "clastatin",
+    "expected": "cilastatin"
+  },
+  {
+    "query": "esmool",
+    "expected": "esmolol"
+  },
+  {
+    "query": "tojazoline",
+    "expected": "tolazoline"
+  },
+  {
+    "query": "cycloserne",
+    "expected": "cycloserine"
+  },
+  {
+    "query": "imipenem aahydrous",
+    "expected": "imipenem anhydrous"
+  },
+  {
+    "query": "erserpine",
+    "expected": "reserpine"
+  },
+  {
+    "query": "glykine",
+    "expected": "glycine"
+  },
+  {
+    "query": "emtaproterenol",
+    "expected": "metaproterenol"
+  },
+  {
+    "query": "klavulanic acid",
+    "expected": "clavulanic acid"
+  },
+  {
+    "query": "dexmedetomeidine",
+    "expected": "dexmedetomidine"
+  },
+  {
+    "query": "tadalanil",
+    "expected": "tadalafil"
+  },
+  {
+    "query": "butorfanol",
+    "expected": "butorphanol"
+  },
+  {
+    "query": "prntetic acid",
+    "expected": "pentetic acid"
+  },
+  {
+    "query": "amzindol",
+    "expected": "mazindol"
+  },
+  {
+    "query": "bithonol",
+    "expected": "bithionol"
+  },
+  {
+    "query": "tolbutamid",
+    "expected": "tolbutamide"
+  },
+  {
+    "query": "nategliniwde",
+    "expected": "nateglinide"
+  },
+  {
+    "query": "brotizola",
+    "expected": "brotizolam"
+  },
+  {
+    "query": "tamoxifenzcitrate",
+    "expected": "tamoxifen citrate"
+  },
+  {
+    "query": "monteluast",
+    "expected": "montelukast"
+  },
+  {
+    "query": "idoksuridine",
+    "expected": "idoxuridine"
+  },
+  {
+    "query": "novobiokin",
+    "expected": "novobiocin"
+  },
+  {
+    "query": "cidofzvir anhydrous",
+    "expected": "cidofovir anhydrous"
+  },
+  {
+    "query": "chlorhexidie",
+    "expected": "chlorhexidine"
+  },
+  {
+    "query": "fenuoterol",
+    "expected": "fenoterol"
+  },
+  {
+    "query": "methylphenixate",
+    "expected": "methylphenidate"
+  },
+  {
+    "query": "setazolam",
+    "expected": "estazolam"
+  },
+  {
+    "query": "phensuximied",
+    "expected": "phensuximide"
+  },
+  {
+    "query": "methotrxate",
+    "expected": "methotrexate"
+  },
+  {
+    "query": "gepiroe",
+    "expected": "gepirone"
+  },
+  {
+    "query": "iclostazol",
+    "expected": "cilostazol"
+  },
+  {
+    "query": "minoxidyil",
+    "expected": "minoxidil"
+  },
+  {
+    "query": "napsoxen",
+    "expected": "naproxen"
+  },
+  {
+    "query": "meofloquine",
+    "expected": "mefloquine"
+  },
+  {
+    "query": "cytaabine",
+    "expected": "cytarabine"
+  },
+  {
+    "query": "plutamide",
+    "expected": "flutamide"
+  },
+  {
+    "query": "memantin",
+    "expected": "memantine"
+  },
+  {
+    "query": "econazal",
+    "expected": "econazole"
+  },
+  {
+    "query": "serrtaline",
+    "expected": "sertraline"
+  },
+  {
+    "query": "temozomomide",
+    "expected": "temozolomide"
+  },
+  {
+    "query": "bromphenjramine",
+    "expected": "brompheniramine"
+  },
+  {
+    "query": "zimelidne",
+    "expected": "zimeldine"
+  },
+  {
+    "query": "pyridostigmin ebromide",
+    "expected": "pyridostigmine bromide"
+  },
+  {
+    "query": "eprosatan",
+    "expected": "eprosartan"
+  },
+  {
+    "query": "graniestron",
+    "expected": "granisetron"
+  },
+  {
+    "query": "fluvoxawine",
+    "expected": "fluvoxamine"
+  },
+  {
+    "query": "afamelanttide",
+    "expected": "afamelanotide"
+  },
+  {
+    "query": "diooprost",
+    "expected": "dinoprost"
+  },
+  {
+    "query": "bufomrin",
+    "expected": "buformin"
+  },
+  {
+    "query": "lumefantgine",
+    "expected": "lumefantrine"
+  },
+  {
+    "query": "tolazamid",
+    "expected": "tolazamide"
+  },
+  {
+    "query": "iobeguane",
+    "expected": "iobenguane"
+  },
+  {
+    "query": "cxacillin",
+    "expected": "oxacillin"
+  },
+  {
+    "query": "nihurtimox",
+    "expected": "nifurtimox"
+  },
+  {
+    "query": "ubsulfan",
+    "expected": "busulfan"
+  },
+  {
+    "query": "guanidin",
+    "expected": "guanidine"
+  },
+  {
+    "query": "terbnafine",
+    "expected": "terbinafine"
+  },
+  {
+    "query": "enoxaci",
+    "expected": "enoxacin"
+  },
+  {
+    "query": "dexemthylphenidate",
+    "expected": "dexmethylphenidate"
+  },
+  {
+    "query": "methylpromapine",
+    "expected": "methylpromazine"
+  },
+  {
+    "query": "primaquine pjosphate",
+    "expected": "primaquine phosphate"
+  },
+  {
+    "query": "euflornithine",
+    "expected": "eflornithine"
+  },
+  {
+    "query": "lxoapine",
+    "expected": "loxapine"
+  },
+  {
+    "query": "sulfinpryazone",
+    "expected": "sulfinpyrazone"
+  },
+  {
+    "query": "aminopdrine",
+    "expected": "aminopyrine"
+  },
+  {
+    "query": "ticlopidiue",
+    "expected": "ticlopidine"
+  },
+  {
+    "query": "edaavone",
+    "expected": "edaravone"
+  },
+  {
+    "query": "pamidronic yacid",
+    "expected": "pamidronic acid"
+  },
+  {
+    "query": "rilemnidine",
+    "expected": "rilmenidine"
+  },
+  {
+    "query": "tmasulosin",
+    "expected": "tamsulosin"
+  },
+  {
+    "query": "astreonam",
+    "expected": "aztreonam"
+  },
+  {
+    "query": "eftazidime",
+    "expected": "ceftazidime"
+  },
+  {
+    "query": "benazepryl",
+    "expected": "benazepril"
+  },
+  {
+    "query": "ezogwbine",
+    "expected": "ezogabine"
+  },
+  {
+    "query": "boeutinib",
+    "expected": "bosutinib"
+  },
+  {
+    "query": "karteolol",
+    "expected": "carteolol"
+  },
+  {
+    "query": "loperaide",
+    "expected": "loperamide"
+  },
+  {
+    "query": "klorothiazide",
+    "expected": "chlorothiazide"
+  },
+  {
+    "query": "orsiglitazone maleate",
+    "expected": "rosiglitazone maleate"
+  },
+  {
+    "query": "brimonidin",
+    "expected": "brimonidine"
+  },
+  {
+    "query": "poamlidomide",
+    "expected": "pomalidomide"
+  },
+  {
+    "query": "kalcitriol",
+    "expected": "calcitriol"
+  },
+  {
+    "query": "oxamnikwine",
+    "expected": "oxamniquine"
+  },
+  {
+    "query": "lenalidsomide",
+    "expected": "lenalidomide"
+  },
+  {
+    "query": "triklosan",
+    "expected": "triclosan"
+  },
+  {
+    "query": "sparfloxacik",
+    "expected": "sparfloxacin"
+  },
+  {
+    "query": "melphaaln",
+    "expected": "melphalan"
+  },
+  {
+    "query": "zalcitafbine",
+    "expected": "zalcitabine"
+  },
+  {
+    "query": "triproliidne",
+    "expected": "triprolidine"
+  },
+  {
+    "query": "atemizole",
+    "expected": "astemizole"
+  },
+  {
+    "query": "bazedoxiafene",
+    "expected": "bazedoxifene"
+  },
+  {
+    "query": "primidopne",
+    "expected": "primidone"
+  },
+  {
+    "query": "ibotin",
+    "expected": "biotin"
+  },
+  {
+    "query": "emphenytoin",
+    "expected": "mephenytoin"
+  },
+  {
+    "query": "karbaril",
+    "expected": "carbaril"
+  },
+  {
+    "query": "pguanfacine",
+    "expected": "guanfacine"
+  },
+  {
+    "query": "cysteineb",
+    "expected": "cysteine"
+  },
+  {
+    "query": "carainoxamine",
+    "expected": "carbinoxamine"
+  },
+  {
+    "query": "bearberine",
+    "expected": "berberine"
+  },
+  {
+    "query": "valdecoxi",
+    "expected": "valdecoxib"
+  },
+  {
+    "query": "parecoksib sodium",
+    "expected": "parecoxib sodium"
+  },
+  {
+    "query": "thambutol",
+    "expected": "ethambutol"
+  },
+  {
+    "query": "cholroform",
+    "expected": "chloroform"
+  },
+  {
+    "query": "mykophenolic acid",
+    "expected": "mycophenolic acid"
+  },
+  {
+    "query": "etmoposide",
+    "expected": "etoposide"
+  },
+  {
+    "query": "oipanoic acid",
+    "expected": "iopanoic acid"
+  },
+  {
+    "query": "omacetaxin mepesuccinate",
+    "expected": "omacetaxine mepesuccinate"
+  },
+  {
+    "query": "cqntharidin",
+    "expected": "cantharidin"
+  },
+  {
+    "query": "vancomisin",
+    "expected": "vancomycin"
+  },
+  {
+    "query": "nitrofurazon",
+    "expected": "nitrofurazone"
+  },
+  {
+    "query": "alenkdronic acid",
+    "expected": "alendronic acid"
+  },
+  {
+    "query": "etidronik acid",
+    "expected": "etidronic acid"
+  },
+  {
+    "query": "vinbzastine",
+    "expected": "vinblastine"
+  },
+  {
+    "query": "minbefradil",
+    "expected": "mibefradil"
+  },
+  {
+    "query": "levoketoconasole",
+    "expected": "levoketoconazole"
+  },
+  {
+    "query": "tafevoquine",
+    "expected": "tafenoquine"
+  },
+  {
+    "query": "cyclosporie",
+    "expected": "cyclosporine"
+  },
+  {
+    "query": "tranenxamic acid",
+    "expected": "tranexamic acid"
+  },
+  {
+    "query": "metolasone",
+    "expected": "metolazone"
+  },
+  {
+    "query": "famciclovri",
+    "expected": "famciclovir"
+  },
+  {
+    "query": "emtriitabine",
+    "expected": "emtricitabine"
+  },
+  {
+    "query": "rcsagiline",
+    "expected": "rasagiline"
+  },
+  {
+    "query": "gemcctabine",
+    "expected": "gemcitabine"
+  },
+  {
+    "query": "laktulose",
+    "expected": "lactulose"
+  },
+  {
+    "query": "safinamid mesylate",
+    "expected": "safinamide mesylate"
+  },
+  {
+    "query": "cloxcaillin",
+    "expected": "cloxacillin"
+  },
+  {
+    "query": "butorphanol taortrate",
+    "expected": "butorphanol tartrate"
+  },
+  {
+    "query": "dicloxacillbn",
+    "expected": "dicloxacillin"
+  },
+  {
+    "query": "buproion",
+    "expected": "bupropion"
+  },
+  {
+    "query": "emewtine",
+    "expected": "emetine"
+  },
+  {
+    "query": "nalbuphin",
+    "expected": "nalbuphine"
+  },
+  {
+    "query": "dextsomethorphan",
+    "expected": "dextromethorphan"
+  },
+  {
+    "query": "hdyroxyzine",
+    "expected": "hydroxyzine"
+  },
+  {
+    "query": "probenecied",
+    "expected": "probenecid"
+  },
+  {
+    "query": "dilfunisal",
+    "expected": "diflunisal"
+  },
+  {
+    "query": "orphendrine",
+    "expected": "orphenadrine"
+  },
+  {
+    "query": "famotidin",
+    "expected": "famotidine"
+  },
+  {
+    "query": "ioxicam",
+    "expected": "isoxicam"
+  },
+  {
+    "query": "doxorubici",
+    "expected": "doxorubicin"
+  },
+  {
+    "query": "dexmethylphenidate hydrokloride",
+    "expected": "dexmethylphenidate hydrochloride"
+  },
+  {
+    "query": "rizbtriptan",
+    "expected": "rizatriptan"
+  },
+  {
+    "query": "khlorprothixene",
+    "expected": "chlorprothixene"
+  },
+  {
+    "query": "zovlpidem",
+    "expected": "zolpidem"
+  },
+  {
+    "query": "fxeofenadine",
+    "expected": "fexofenadine"
+  },
+  {
+    "query": "endocromil sodium",
+    "expected": "nedocromil sodium"
+  },
+  {
+    "query": "tiroviban",
+    "expected": "tirofiban"
+  },
+  {
+    "query": "danjhron",
+    "expected": "danthron"
+  },
+  {
+    "query": "floxuirdine",
+    "expected": "floxuridine"
+  },
+  {
+    "query": "phenactemide",
+    "expected": "phenacemide"
+  },
+  {
+    "query": "fosphaenytoin sodium",
+    "expected": "fosphenytoin sodium"
+  },
+  {
+    "query": "alpidemy",
+    "expected": "alpidem"
+  },
+  {
+    "query": "adefovri dipivoxil",
+    "expected": "adefovir dipivoxil"
+  },
+  {
+    "query": "ceftrixaone",
+    "expected": "ceftriaxone"
+  },
+  {
+    "query": "risedroqic acid",
+    "expected": "risedronic acid"
+  },
+  {
+    "query": "zoledronic acid anhydrus",
+    "expected": "zoledronic acid anhydrous"
+  },
+  {
+    "query": "andulafungin",
+    "expected": "anidulafungin"
+  },
+  {
+    "query": "tyrosin",
+    "expected": "tyrosine"
+  },
+  {
+    "query": "dobutamin",
+    "expected": "dobutamine"
+  },
+  {
+    "query": "levacetylleucize",
+    "expected": "levacetylleucine"
+  },
+  {
+    "query": "cefdiir",
+    "expected": "cefdinir"
+  },
+  {
+    "query": "tryvtophan",
+    "expected": "tryptophan"
+  },
+  {
+    "query": "adntrolene sodium",
+    "expected": "dantrolene sodium"
+  },
+  {
+    "query": "lonafvrnib",
+    "expected": "lonafarnib"
+  },
+  {
+    "query": "delavirdin mesylate",
+    "expected": "delavirdine mesylate"
+  },
+  {
+    "query": "ulutamine",
+    "expected": "glutamine"
+  },
+  {
+    "query": "nimesuliae",
+    "expected": "nimesulide"
+  },
+  {
+    "query": "halothae",
+    "expected": "halothane"
+  },
+  {
+    "query": "dipyridmole",
+    "expected": "dipyridamole"
+  },
+  {
+    "query": "metyrpaone",
+    "expected": "metyrapone"
+  },
+  {
+    "query": "diiphenidol",
+    "expected": "diphenidol"
+  },
+  {
+    "query": "dipethylcarbamazine citrate",
+    "expected": "diethylcarbamazine citrate"
+  },
+  {
+    "query": "coppre",
+    "expected": "copper"
+  },
+  {
+    "query": "sarlaasin",
+    "expected": "saralasin"
+  },
+  {
+    "query": "rritonavir",
+    "expected": "ritonavir"
+  },
+  {
+    "query": "gefitinzib",
+    "expected": "gefitinib"
+  },
+  {
+    "query": "gaabpentin",
+    "expected": "gabapentin"
+  },
+  {
+    "query": "3,3',4',5-tetrakhlorosalicylanilide",
+    "expected": "3,3',4',5-tetrachlorosalicylanilide"
+  },
+  {
+    "query": "laoosamide",
+    "expected": "lacosamide"
+  },
+  {
+    "query": "iamtinib",
+    "expected": "imatinib"
+  },
+  {
+    "query": "mpramipexole",
+    "expected": "pramipexole"
+  },
+  {
+    "query": "bisaucodyl",
+    "expected": "bisacodyl"
+  },
+  {
+    "query": "vpalrestat",
+    "expected": "epalrestat"
+  },
+  {
+    "query": "chloroprocaine hydrochloried",
+    "expected": "chloroprocaine hydrochloride"
+  },
+  {
+    "query": "amloride",
+    "expected": "amiloride"
+  },
+  {
+    "query": "amatadine",
+    "expected": "azatadine"
+  },
+  {
+    "query": "chloroquin phosphate",
+    "expected": "chloroquine phosphate"
+  },
+  {
+    "query": "iophenbylate",
+    "expected": "iophendylate"
+  },
+  {
+    "query": "kapsaicin",
+    "expected": "capsaicin"
+  },
+  {
+    "query": "entwcapone",
+    "expected": "entacapone"
+  },
+  {
+    "query": "cycvothiazide",
+    "expected": "cyclothiazide"
+  },
+  {
+    "query": "suproen",
+    "expected": "suprofen"
+  },
+  {
+    "query": "bosenan",
+    "expected": "bosentan"
+  },
+  {
+    "query": "rmiantadine",
+    "expected": "rimantadine"
+  },
+  {
+    "query": "lefluwnomide",
+    "expected": "leflunomide"
+  },
+  {
+    "query": "sulfadoimethoxine",
+    "expected": "sulfadimethoxine"
+  },
+  {
+    "query": "phenylporpanolamine",
+    "expected": "phenylpropanolamine"
+  },
+  {
+    "query": "epoprostevnol sodium",
+    "expected": "epoprostenol sodium"
+  },
+  {
+    "query": "oxymorfone",
+    "expected": "oxymorphone"
+  },
+  {
+    "query": "isulfiram",
+    "expected": "disulfiram"
+  },
+  {
+    "query": "karbamoylcholine",
+    "expected": "carbamoylcholine"
+  },
+  {
+    "query": "tmeazepam",
+    "expected": "temazepam"
+  },
+  {
+    "query": "flhurazepam",
+    "expected": "flurazepam"
+  },
+  {
+    "query": "prazpam",
+    "expected": "prazepam"
+  },
+  {
+    "query": "halazepabm",
+    "expected": "halazepam"
+  },
+  {
+    "query": "pentoxbarbital sodium",
+    "expected": "pentobarbital sodium"
+  },
+  {
+    "query": "selegilin",
+    "expected": "selegiline"
+  },
+  {
+    "query": "terifluonmide",
+    "expected": "teriflunomide"
+  },
+  {
+    "query": "mrsna",
+    "expected": "mesna"
+  },
+  {
+    "query": "itraconazoe",
+    "expected": "itraconazole"
+  },
+  {
+    "query": "gentian diolet",
+    "expected": "gentian violet"
+  },
+  {
+    "query": "praziquanstel",
+    "expected": "praziquantel"
+  },
+  {
+    "query": "ohydrocortisone hemisuccinate anhydrous",
+    "expected": "hydrocortisone hemisuccinate anhydrous"
+  },
+  {
+    "query": "metacholine",
+    "expected": "methacholine"
+  },
+  {
+    "query": "mejprobamate",
+    "expected": "meprobamate"
+  },
+  {
+    "query": "guaifeneusin",
+    "expected": "guaifenesin"
+  },
+  {
+    "query": "fenfoibric acid",
+    "expected": "fenofibric acid"
+  },
+  {
+    "query": "almefene",
+    "expected": "nalmefene"
+  },
+  {
+    "query": "succinylcholine kloride",
+    "expected": "succinylcholine chloride"
+  },
+  {
+    "query": "mivacurium chlorid",
+    "expected": "mivacurium chloride"
+  },
+  {
+    "query": "ura",
+    "expected": "urea"
+  },
+  {
+    "query": "tipiracil hydrochforide",
+    "expected": "tipiracil hydrochloride"
+  },
+  {
+    "query": "crinecerofnt",
+    "expected": "crinecerfont"
+  },
+  {
+    "query": "phenolphthaqlein",
+    "expected": "phenolphthalein"
+  },
+  {
+    "query": "rtinol",
+    "expected": "retinol"
+  },
+  {
+    "query": "fuocinolone acetonide",
+    "expected": "fluocinolone acetonide"
+  },
+  {
+    "query": "buenafine",
+    "expected": "butenafine"
+  },
+  {
+    "query": "gtavudine",
+    "expected": "stavudine"
+  },
+  {
+    "query": "lsartan potassium",
+    "expected": "losartan potassium"
+  },
+  {
+    "query": "cqefoxitin",
+    "expected": "cefoxitin"
+  },
+  {
+    "query": "sorixudine",
+    "expected": "sorivudine"
+  },
+  {
+    "query": "ibadronic acid",
+    "expected": "ibandronic acid"
+  },
+  {
+    "query": "loartadine",
+    "expected": "loratadine"
+  },
+  {
+    "query": "eabstine",
+    "expected": "ebastine"
+  },
+  {
+    "query": "cetirizinz",
+    "expected": "cetirizine"
+  },
+  {
+    "query": "clobxzam",
+    "expected": "clobazam"
+  },
+  {
+    "query": "lelosalbutamol",
+    "expected": "levosalbutamol"
+  },
+  {
+    "query": "clavulanate potvssium",
+    "expected": "clavulanate potassium"
+  },
+  {
+    "query": "doxylamune",
+    "expected": "doxylamine"
+  },
+  {
+    "query": "serbatrodast",
+    "expected": "seratrodast"
+  },
+  {
+    "query": "remiefntanil",
+    "expected": "remifentanil"
+  },
+  {
+    "query": "defeirprone",
+    "expected": "deferiprone"
+  },
+  {
+    "query": "amiostine",
+    "expected": "amifostine"
+  },
+  {
+    "query": "gonadorexlin",
+    "expected": "gonadorelin"
+  },
+  {
+    "query": "bepidil",
+    "expected": "bepridil"
+  },
+  {
+    "query": "levodoipa",
+    "expected": "levodopa"
+  },
+  {
+    "query": "cefotavxime sodium",
+    "expected": "cefotaxime sodium"
+  },
+  {
+    "query": "etravirpne",
+    "expected": "etravirine"
+  },
+  {
+    "query": "viloxazien",
+    "expected": "viloxazine"
+  },
+  {
+    "query": "loracarbef ajnhydrous",
+    "expected": "loracarbef anhydrous"
+  },
+  {
+    "query": "mxoalactam",
+    "expected": "moxalactam"
+  },
+  {
+    "query": "candeesartan cilexetil",
+    "expected": "candesartan cilexetil"
+  },
+  {
+    "query": "evans lbue free acid",
+    "expected": "evans blue free acid"
+  },
+  {
+    "query": "tslmisartan",
+    "expected": "telmisartan"
+  },
+  {
+    "query": "dienestqrol",
+    "expected": "dienestrol"
+  },
+  {
+    "query": "dexektoprofen",
+    "expected": "dexketoprofen"
+  },
+  {
+    "query": "cirbetapentane",
+    "expected": "carbetapentane"
+  },
+  {
+    "query": "tlometin",
+    "expected": "tolmetin"
+  },
+  {
+    "query": "nepafenacv",
+    "expected": "nepafenac"
+  },
+  {
+    "query": "cperhexiline",
+    "expected": "perhexiline"
+  },
+  {
+    "query": "beksarotene",
+    "expected": "bexarotene"
+  },
+  {
+    "query": "ifosfamidxe",
+    "expected": "ifosfamide"
+  },
+  {
+    "query": "isomflurophate",
+    "expected": "isoflurophate"
+  },
+  {
+    "query": "fenldopam mesylate",
+    "expected": "fenoldopam mesylate"
+  },
+  {
+    "query": "tiagabin",
+    "expected": "tiagabine"
+  },
+  {
+    "query": "teagserod",
+    "expected": "tegaserod"
+  },
+  {
+    "query": "istradefyllin",
+    "expected": "istradefylline"
+  },
+  {
+    "query": "migulstat",
+    "expected": "miglustat"
+  },
+  {
+    "query": "idclofenac sodium",
+    "expected": "diclofenac sodium"
+  },
+  {
+    "query": "guanardel",
+    "expected": "guanadrel"
+  },
+  {
+    "query": "kalcifediol anhydrous",
+    "expected": "calcifediol anhydrous"
+  },
+  {
+    "query": "kholecalciferol",
+    "expected": "cholecalciferol"
+  },
+  {
+    "query": "dapslone",
+    "expected": "dapsone"
+  },
+  {
+    "query": "aminocaproic acin",
+    "expected": "aminocaproic acid"
+  },
+  {
+    "query": "dithiazaninet iodide",
+    "expected": "dithiazanine iodide"
+  },
+  {
+    "query": "kianidanol",
+    "expected": "cianidanol"
+  },
+  {
+    "query": "mozavxaptan",
+    "expected": "mozavaptan"
+  },
+  {
+    "query": "latanoorost",
+    "expected": "latanoprost"
+  },
+  {
+    "query": "triclormethiazide",
+    "expected": "trichlormethiazide"
+  },
+  {
+    "query": "chlortahlidone",
+    "expected": "chlorthalidone"
+  },
+  {
+    "query": "cephaloridire",
+    "expected": "cephaloridine"
+  },
+  {
+    "query": "florescein",
+    "expected": "fluorescein"
+  },
+  {
+    "query": "regabalin",
+    "expected": "pregabalin"
+  },
+  {
+    "query": "sodium phosphate, dfbasic, anhydrous",
+    "expected": "sodium phosphate, dibasic, anhydrous"
+  },
+  {
+    "query": "simvabtatin",
+    "expected": "simvastatin"
+  },
+  {
+    "query": "ritodrnie",
+    "expected": "ritodrine"
+  },
+  {
+    "query": "metkhysergide",
+    "expected": "methysergide"
+  },
+  {
+    "query": "oxcarbazeoine",
+    "expected": "oxcarbazepine"
+  },
+  {
+    "query": "valsvartan",
+    "expected": "valsartan"
+  },
+  {
+    "query": "encaiide",
+    "expected": "encainide"
+  },
+  {
+    "query": "moclobemied",
+    "expected": "moclobemide"
+  },
+  {
+    "query": "medifoxamisne",
+    "expected": "medifoxamine"
+  },
+  {
+    "query": "nabumepone",
+    "expected": "nabumetone"
+  },
+  {
+    "query": "oxarozin",
+    "expected": "oxaprozin"
+  },
+  {
+    "query": "procyclidinhe",
+    "expected": "procyclidine"
+  },
+  {
+    "query": "bmetanide",
+    "expected": "bumetanide"
+  },
+  {
+    "query": "glipziide",
+    "expected": "glipizide"
+  },
+  {
+    "query": "fenfuluramine",
+    "expected": "fenfluramine"
+  },
+  {
+    "query": "moricizinne",
+    "expected": "moricizine"
+  },
+  {
+    "query": "eslitcarbazepine acetate",
+    "expected": "eslicarbazepine acetate"
+  },
+  {
+    "query": "bormfenac",
+    "expected": "bromfenac"
+  },
+  {
+    "query": "tipanidine",
+    "expected": "tizanidine"
+  },
+  {
+    "query": "viagbatrin",
+    "expected": "vigabatrin"
+  },
+  {
+    "query": "vinkristine",
+    "expected": "vincristine"
+  },
+  {
+    "query": "amoxicilkin",
+    "expected": "amoxicillin"
+  },
+  {
+    "query": "masoproool",
+    "expected": "masoprocol"
+  },
+  {
+    "query": "fingotimod",
+    "expected": "fingolimod"
+  },
+  {
+    "query": "rupatadin",
+    "expected": "rupatadine"
+  },
+  {
+    "query": "acetphenazine",
+    "expected": "acetophenazine"
+  },
+  {
+    "query": "kibucaine",
+    "expected": "dibucaine"
+  },
+  {
+    "query": "mepivacain",
+    "expected": "mepivacaine"
+  },
+  {
+    "query": "emsoridazine",
+    "expected": "mesoridazine"
+  },
+  {
+    "query": "pheelzine",
+    "expected": "phenelzine"
+  },
+  {
+    "query": "ivdarabine",
+    "expected": "vidarabine"
+  },
+  {
+    "query": "prastreone",
+    "expected": "prasterone"
+  },
+  {
+    "query": "hyrdocortisone acetate",
+    "expected": "hydrocortisone acetate"
+  },
+  {
+    "query": "trihexyphenidyl hydorochloride",
+    "expected": "trihexyphenidyl hydrochloride"
+  },
+  {
+    "query": "artciaine",
+    "expected": "articaine"
+  },
+  {
+    "query": "felbaamte",
+    "expected": "felbamate"
+  },
+  {
+    "query": "ethootin",
+    "expected": "ethotoin"
+  },
+  {
+    "query": "amlexlnox",
+    "expected": "amlexanox"
+  },
+  {
+    "query": "alclofnac",
+    "expected": "alclofenac"
+  },
+  {
+    "query": "bupivacine",
+    "expected": "bupivacaine"
+  },
+  {
+    "query": "sodkum nitrite",
+    "expected": "sodium nitrite"
+  },
+  {
+    "query": "parametadione",
+    "expected": "paramethadione"
+  },
+  {
+    "query": "biperjiden",
+    "expected": "biperiden"
+  },
+  {
+    "query": "gultethimide",
+    "expected": "glutethimide"
+  },
+  {
+    "query": "furazolidong",
+    "expected": "furazolidone"
+  },
+  {
+    "query": "edaophonium",
+    "expected": "edrophonium"
+  },
+  {
+    "query": "epinasqtine",
+    "expected": "epinastine"
+  },
+  {
+    "query": "halofantrnie",
+    "expected": "halofantrine"
+  },
+  {
+    "query": "droplridol",
+    "expected": "droperidol"
+  },
+  {
+    "query": "mzolastine",
+    "expected": "mizolastine"
+  },
+  {
+    "query": "sulfaphenazovle",
+    "expected": "sulfaphenazole"
+  },
+  {
+    "query": "alosptron",
+    "expected": "alosetron"
+  },
+  {
+    "query": "bufeamac",
+    "expected": "bufexamac"
+  },
+  {
+    "query": "progluide",
+    "expected": "proglumide"
+  },
+  {
+    "query": "ambrisenean",
+    "expected": "ambrisentan"
+  },
+  {
+    "query": "aripiprazolne",
+    "expected": "aripiprazole"
+  },
+  {
+    "query": "amoxapinpe",
+    "expected": "amoxapine"
+  },
+  {
+    "query": "pyridostigmie",
+    "expected": "pyridostigmine"
+  },
+  {
+    "query": "raloksifene hydrochloride",
+    "expected": "raloxifene hydrochloride"
+  },
+  {
+    "query": "idaurbicin",
+    "expected": "idarubicin"
+  },
+  {
+    "query": "betain",
+    "expected": "betaine"
+  },
+  {
+    "query": "desvenlgafaxine",
+    "expected": "desvenlafaxine"
+  },
+  {
+    "query": "minodronica cid",
+    "expected": "minodronic acid"
+  },
+  {
+    "query": "bisumth subsalicylate",
+    "expected": "bismuth subsalicylate"
+  },
+  {
+    "query": "lasofoksifene",
+    "expected": "lasofoxifene"
+  },
+  {
+    "query": "egadenoson anhydrous",
+    "expected": "regadenoson anhydrous"
+  },
+  {
+    "query": "eksifone",
+    "expected": "exifone"
+  },
+  {
+    "query": "levomilncaipran",
+    "expected": "levomilnacipran"
+  },
+  {
+    "query": "sincaldie",
+    "expected": "sincalide"
+  },
+  {
+    "query": "iidapril",
+    "expected": "imidapril"
+  },
+  {
+    "query": "pnetazocine",
+    "expected": "pentazocine"
+  },
+  {
+    "query": "dicyclnomine",
+    "expected": "dicyclomine"
+  },
+  {
+    "query": "penicillin g sodiu",
+    "expected": "penicillin g sodium"
+  },
+  {
+    "query": "edrophnium chloride",
+    "expected": "edrophonium chloride"
+  },
+  {
+    "query": "trifluriidne",
+    "expected": "trifluridine"
+  },
+  {
+    "query": "actiretin",
+    "expected": "acitretin"
+  },
+  {
+    "query": "oxybutynin chlroide",
+    "expected": "oxybutynin chloride"
+  },
+  {
+    "query": "decamethoniutm bromide",
+    "expected": "decamethonium bromide"
+  },
+  {
+    "query": "telithrompycin",
+    "expected": "telithromycin"
+  },
+  {
+    "query": "zetimibe",
+    "expected": "ezetimibe"
+  },
+  {
+    "query": "epoprostenbol",
+    "expected": "epoprostenol"
+  },
+  {
+    "query": "niacinamid",
+    "expected": "niacinamide"
+  },
+  {
+    "query": "amipneptine",
+    "expected": "amineptine"
+  },
+  {
+    "query": "amipnorex",
+    "expected": "aminorex"
+  },
+  {
+    "query": "migalastta",
+    "expected": "migalastat"
+  },
+  {
+    "query": "methyl alicylate",
+    "expected": "methyl salicylate"
+  },
+  {
+    "query": "potassium iosdide",
+    "expected": "potassium iodide"
+  },
+  {
+    "query": "ravastatin",
+    "expected": "pravastatin"
+  },
+  {
+    "query": "toremide",
+    "expected": "torsemide"
+  },
+  {
+    "query": "levocranitine",
+    "expected": "levocarnitine"
+  },
+  {
+    "query": "predbisolone acetate",
+    "expected": "prednisolone acetate"
+  },
+  {
+    "query": "chlormadnone acetate",
+    "expected": "chlormadinone acetate"
+  },
+  {
+    "query": "selenomethioine",
+    "expected": "selenomethionine"
+  },
+  {
+    "query": "pinacijil anhydrous",
+    "expected": "pinacidil anhydrous"
+  },
+  {
+    "query": "mometfasone furoate",
+    "expected": "mometasone furoate"
+  },
+  {
+    "query": "norethindronq",
+    "expected": "norethindrone"
+  },
+  {
+    "query": "atzaanavir",
+    "expected": "atazanavir"
+  },
+  {
+    "query": "moexipcril",
+    "expected": "moexipril"
+  },
+  {
+    "query": "aragtroban",
+    "expected": "argatroban"
+  },
+  {
+    "query": "spectinouycin",
+    "expected": "spectinomycin"
+  },
+  {
+    "query": "ramipryl",
+    "expected": "ramipril"
+  },
+  {
+    "query": "lirsinopril",
+    "expected": "lisinopril"
+  },
+  {
+    "query": "aminosalicyic acid",
+    "expected": "aminosalicylic acid"
+  },
+  {
+    "query": "tsetosterone propionate",
+    "expected": "testosterone propionate"
+  },
+  {
+    "query": "prucalpride",
+    "expected": "prucalopride"
+  },
+  {
+    "query": "desnoratadine",
+    "expected": "desloratadine"
+  },
+  {
+    "query": "eptifibatdie",
+    "expected": "eptifibatide"
+  },
+  {
+    "query": "dequajinium",
+    "expected": "dequalinium"
+  },
+  {
+    "query": "duloxetin",
+    "expected": "duloxetine"
+  },
+  {
+    "query": "pemolin",
+    "expected": "pemoline"
+  },
+  {
+    "query": "tetrabemazine",
+    "expected": "tetrabenazine"
+  },
+  {
+    "query": "hdrogen peroxide",
+    "expected": "hydrogen peroxide"
+  },
+  {
+    "query": "aceylcholine chloride",
+    "expected": "acetylcholine chloride"
+  },
+  {
+    "query": "zolimtriptan",
+    "expected": "zolmitriptan"
+  },
+  {
+    "query": "phosphori acid",
+    "expected": "phosphoric acid"
+  },
+  {
+    "query": "dequalinium cholride",
+    "expected": "dequalinium chloride"
+  },
+  {
+    "query": "deiamethonium",
+    "expected": "decamethonium"
+  },
+  {
+    "query": "tubocuarine",
+    "expected": "tubocurarine"
+  },
+  {
+    "query": "sulfjguanidine",
+    "expected": "sulfaguanidine"
+  },
+  {
+    "query": "sulamethizole",
+    "expected": "sulfamethizole"
+  },
+  {
+    "query": "pheniramin",
+    "expected": "pheniramine"
+  },
+  {
+    "query": "psilocaine",
+    "expected": "prilocaine"
+  },
+  {
+    "query": "propoxycain",
+    "expected": "propoxycaine"
+  },
+  {
+    "query": "propaacaine",
+    "expected": "proparacaine"
+  },
+  {
+    "query": "ehxylcaine",
+    "expected": "hexylcaine"
+  },
+  {
+    "query": "pramoxin",
+    "expected": "pramoxine"
+  },
+  {
+    "query": "beoxinate",
+    "expected": "benoxinate"
+  },
+  {
+    "query": "thsothixene",
+    "expected": "thiothixene"
+  },
+  {
+    "query": "btuamben",
+    "expected": "butamben"
+  },
+  {
+    "query": "ciprofoxacin hydrochloride",
+    "expected": "ciprofloxacin hydrochloride"
+  },
+  {
+    "query": "nelfianvir mesylate",
+    "expected": "nelfinavir mesylate"
+  },
+  {
+    "query": "ethopropzaine",
+    "expected": "ethopropazine"
+  },
+  {
+    "query": "cinoxaicn",
+    "expected": "cinoxacin"
+  },
+  {
+    "query": "cangerlor",
+    "expected": "cangrelor"
+  },
+  {
+    "query": "crabenicillin",
+    "expected": "carbenicillin"
+  },
+  {
+    "query": "benoksaprofen",
+    "expected": "benoxaprofen"
+  },
+  {
+    "query": "phenlyephrine",
+    "expected": "phenylephrine"
+  },
+  {
+    "query": "ramezlteon",
+    "expected": "ramelteon"
+  },
+  {
+    "query": "raeprazole",
+    "expected": "rabeprazole"
+  },
+  {
+    "query": "jinidazole",
+    "expected": "tinidazole"
+  },
+  {
+    "query": "sulconazold",
+    "expected": "sulconazole"
+  },
+  {
+    "query": "zopioclone",
+    "expected": "zopiclone"
+  },
+  {
+    "query": "penikillin g potassium",
+    "expected": "penicillin g potassium"
+  },
+  {
+    "query": "sodium nitroprussidej",
+    "expected": "sodium nitroprusside"
+  },
+  {
+    "query": "acirvastine",
+    "expected": "acrivastine"
+  },
+  {
+    "query": "tolaptan",
+    "expected": "tolvaptan"
+  },
+  {
+    "query": "oxyphenbutazone anhydrus",
+    "expected": "oxyphenbutazone anhydrous"
+  },
+  {
+    "query": "oseltamivyr",
+    "expected": "oseltamivir"
+  },
+  {
+    "query": "peramivir anhidrous",
+    "expected": "peramivir anhydrous"
+  },
+  {
+    "query": "ibufenak",
+    "expected": "ibufenac"
+  },
+  {
+    "query": "oxibutynin",
+    "expected": "oxybutynin"
+  },
+  {
+    "query": "ertaienem sodium",
+    "expected": "ertapenem sodium"
+  },
+  {
+    "query": "caisoprodol",
+    "expected": "carisoprodol"
+  },
+  {
+    "query": "deferoxamnie mesylate",
+    "expected": "deferoxamine mesylate"
+  },
+  {
+    "query": "lisinopril anhydrus",
+    "expected": "lisinopril anhydrous"
+  },
+  {
+    "query": "azeliac acid",
+    "expected": "azelaic acid"
+  },
+  {
+    "query": "benzyl benozate",
+    "expected": "benzyl benzoate"
+  },
+  {
+    "query": "propanbtheline bromide",
+    "expected": "propantheline bromide"
+  },
+  {
+    "query": "tripelennamin",
+    "expected": "tripelennamine"
+  },
+  {
+    "query": "prenazopyridine",
+    "expected": "phenazopyridine"
+  },
+  {
+    "query": "cylcofenil",
+    "expected": "cyclofenil"
+  },
+  {
+    "query": "skulfacarbamide",
+    "expected": "sulfacarbamide"
+  },
+  {
+    "query": "sulfaenzamide",
+    "expected": "sulfabenzamide"
+  },
+  {
+    "query": "vilagliptin",
+    "expected": "vildagliptin"
+  },
+  {
+    "query": "trymethaphan camsylate",
+    "expected": "trimethaphan camsylate"
+  },
+  {
+    "query": "gainrelix",
+    "expected": "ganirelix"
+  },
+  {
+    "query": "naftodidil",
+    "expected": "naftopidil"
+  },
+  {
+    "query": "degareliks",
+    "expected": "degarelix"
+  },
+  {
+    "query": "abarehlix",
+    "expected": "abarelix"
+  },
+  {
+    "query": "isoflsrane",
+    "expected": "isoflurane"
+  },
+  {
+    "query": "ntirogen",
+    "expected": "nitrogen"
+  },
+  {
+    "query": "enflurae",
+    "expected": "enflurane"
+  },
+  {
+    "query": "metocurne",
+    "expected": "metocurine"
+  },
+  {
+    "query": "ctiric acid",
+    "expected": "citric acid"
+  },
+  {
+    "query": "oxiconasole",
+    "expected": "oxiconazole"
+  },
+  {
+    "query": "salmreterol",
+    "expected": "salmeterol"
+  },
+  {
+    "query": "oaxliplatin",
+    "expected": "oxaliplatin"
+  },
+  {
+    "query": "audapalene",
+    "expected": "adapalene"
+  },
+  {
+    "query": "glafeniyne",
+    "expected": "glafenine"
+  },
+  {
+    "query": "wtetrahydrozoline",
+    "expected": "tetrahydrozoline"
+  },
+  {
+    "query": "romidepsiin",
+    "expected": "romidepsin"
+  },
+  {
+    "query": "pentolindum",
+    "expected": "pentolinium"
+  },
+  {
+    "query": "repagliniede",
+    "expected": "repaglinide"
+  },
+  {
+    "query": "nilutamdie",
+    "expected": "nilutamide"
+  },
+  {
+    "query": "pergolide meslyate",
+    "expected": "pergolide mesylate"
+  },
+  {
+    "query": "narapriptan",
+    "expected": "naratriptan"
+  },
+  {
+    "query": "frovartiptan",
+    "expected": "frovatriptan"
+  },
+  {
+    "query": "vreapamil hydrochloride",
+    "expected": "verapamil hydrochloride"
+  },
+  {
+    "query": "phenobarbitll sodium",
+    "expected": "phenobarbital sodium"
+  },
+  {
+    "query": "imiqsuimod",
+    "expected": "imiquimod"
+  },
+  {
+    "query": "cinchophien",
+    "expected": "cinchophen"
+  },
+  {
+    "query": "levetsiracetam",
+    "expected": "levetiracetam"
+  },
+  {
+    "query": "hloprogin",
+    "expected": "haloprogin"
+  },
+  {
+    "query": "penbutclol",
+    "expected": "penbutolol"
+  },
+  {
+    "query": "anbrafenine",
+    "expected": "antrafenine"
+  },
+  {
+    "query": "beclobate",
+    "expected": "beclobrate"
+  },
+  {
+    "query": "metipraonlol",
+    "expected": "metipranolol"
+  },
+  {
+    "query": "clofazmiine",
+    "expected": "clofazimine"
+  },
+  {
+    "query": "beta karotene",
+    "expected": "beta carotene"
+  },
+  {
+    "query": "quiidine",
+    "expected": "quinidine"
+  },
+  {
+    "query": "butoconnzole",
+    "expected": "butoconazole"
+  },
+  {
+    "query": "cefotima",
+    "expected": "cefotiam"
+  },
+  {
+    "query": "fhnoprofen",
+    "expected": "fenoprofen"
+  },
+  {
+    "query": "ketokonazole",
+    "expected": "ketoconazole"
+  },
+  {
+    "query": "qpuinine",
+    "expected": "quinine"
+  },
+  {
+    "query": "diamtahzole dihydrochloride",
+    "expected": "diamthazole dihydrochloride"
+  },
+  {
+    "query": "hydroxystilbamvidine",
+    "expected": "hydroxystilbamidine"
+  },
+  {
+    "query": "roticotine",
+    "expected": "rotigotine"
+  },
+  {
+    "query": "natazoline",
+    "expected": "antazoline"
+  },
+  {
+    "query": "fomelizole",
+    "expected": "fomepizole"
+  },
+  {
+    "query": "isosorbidem ononitrate",
+    "expected": "isosorbide mononitrate"
+  },
+  {
+    "query": "tioproni",
+    "expected": "tiopronin"
+  },
+  {
+    "query": "carprofe",
+    "expected": "carprofen"
+  },
+  {
+    "query": "moxisylyye",
+    "expected": "moxisylyte"
+  },
+  {
+    "query": "procarbazinte",
+    "expected": "procarbazine"
+  },
+  {
+    "query": "daunavir",
+    "expected": "darunavir"
+  },
+  {
+    "query": "tolcaponf",
+    "expected": "tolcapone"
+  },
+  {
+    "query": "pentafgastrin",
+    "expected": "pentagastrin"
+  },
+  {
+    "query": "sojafenib",
+    "expected": "sorafenib"
+  },
+  {
+    "query": "cevmeline",
+    "expected": "cevimeline"
+  },
+  {
+    "query": "pixantronc",
+    "expected": "pixantrone"
+  },
+  {
+    "query": "nctisinone",
+    "expected": "nitisinone"
+  },
+  {
+    "query": "phenfocrmin",
+    "expected": "phenformin"
+  },
+  {
+    "query": "amifampriddne",
+    "expected": "amifampridine"
+  },
+  {
+    "query": "lomitapde",
+    "expected": "lomitapide"
+  },
+  {
+    "query": "vnrdenafil hydrochloride",
+    "expected": "vardenafil hydrochloride"
+  },
+  {
+    "query": "methoxyfluranen",
+    "expected": "methoxyflurane"
+  },
+  {
+    "query": "oksybate",
+    "expected": "oxybate"
+  },
+  {
+    "query": "guanethidine monospulfate",
+    "expected": "guanethidine monosulfate"
+  },
+  {
+    "query": "darifenacain",
+    "expected": "darifenacin"
+  },
+  {
+    "query": "orlisxat",
+    "expected": "orlistat"
+  },
+  {
+    "query": "rilpivirinoe",
+    "expected": "rilpivirine"
+  },
+  {
+    "query": "valacmyclovir",
+    "expected": "valacyclovir"
+  },
+  {
+    "query": "spasentan",
+    "expected": "sparsentan"
+  },
+  {
+    "query": "nerauinib",
+    "expected": "neratinib"
+  },
+  {
+    "query": "tiludroni acid",
+    "expected": "tiludronic acid"
+  },
+  {
+    "query": "carboplatn",
+    "expected": "carboplatin"
+  },
+  {
+    "query": "bonanserin",
+    "expected": "blonanserin"
+  },
+  {
+    "query": "lorcaseri",
+    "expected": "lorcaserin"
+  },
+  {
+    "query": "ramartoban",
+    "expected": "ramatroban"
+  },
+  {
+    "query": "sodium bicarobnate",
+    "expected": "sodium bicarbonate"
+  },
+  {
+    "query": "sodium aectate",
+    "expected": "sodium acetate"
+  },
+  {
+    "query": "sodium citrae",
+    "expected": "sodium citrate"
+  },
+  {
+    "query": "sodium benzoatx",
+    "expected": "sodium benzoate"
+  },
+  {
+    "query": "sodium laktate",
+    "expected": "sodium lactate"
+  },
+  {
+    "query": "fluvestrant",
+    "expected": "fulvestrant"
+  },
+  {
+    "query": "ertapenme",
+    "expected": "ertapenem"
+  },
+  {
+    "query": "ampisilin",
+    "expected": "ampicillin"
+  },
+  {
+    "query": "galalmine",
+    "expected": "gallamine"
+  },
+  {
+    "query": "attracurium",
+    "expected": "atracurium"
+  },
+  {
+    "query": "pancronium",
+    "expected": "pancuronium"
+  },
+  {
+    "query": "afrormoterol",
+    "expected": "arformoterol"
+  },
+  {
+    "query": "pridoxine",
+    "expected": "pyridoxine"
+  },
+  {
+    "query": "ronedarone",
+    "expected": "dronedarone"
+  },
+  {
+    "query": "tefodiline",
+    "expected": "terodiline"
+  },
+  {
+    "query": "auranofn",
+    "expected": "auranofin"
+  },
+  {
+    "query": "sdium phosphate, monobasic",
+    "expected": "sodium phosphate, monobasic"
+  },
+  {
+    "query": "esodium carbonate",
+    "expected": "sodium carbonate"
+  },
+  {
+    "query": "vilasodone",
+    "expected": "vilazodone"
+  },
+  {
+    "query": "udesonide",
+    "expected": "budesonide"
+  },
+  {
+    "query": "pentamiidne isethionate",
+    "expected": "pentamidine isethionate"
+  },
+  {
+    "query": "pirprkfen",
+    "expected": "pirprofen"
+  },
+  {
+    "query": "hclorzoxazone",
+    "expected": "chlorzoxazone"
+  },
+  {
+    "query": "artesudate",
+    "expected": "artesunate"
+  },
+  {
+    "query": "buflomedel",
+    "expected": "buflomedil"
+  },
+  {
+    "query": "xriparanol",
+    "expected": "triparanol"
+  },
+  {
+    "query": "methylene blue catiog",
+    "expected": "methylene blue cation"
+  },
+  {
+    "query": "oxglutatione",
+    "expected": "oxiglutatione"
+  },
+  {
+    "query": "modafiil",
+    "expected": "modafinil"
+  },
+  {
+    "query": "esflumbiprofen",
+    "expected": "esflurbiprofen"
+  },
+  {
+    "query": "dexbiuprofen",
+    "expected": "dexibuprofen"
+  },
+  {
+    "query": "kannabidiol",
+    "expected": "cannabidiol"
+  },
+  {
+    "query": "palbocuclib",
+    "expected": "palbociclib"
+  },
+  {
+    "query": "prgouanil",
+    "expected": "proguanil"
+  },
+  {
+    "query": "thiethylperasine",
+    "expected": "thiethylperazine"
+  },
+  {
+    "query": "gallium oxbodotreotide",
+    "expected": "gallium oxodotreotide"
+  },
+  {
+    "query": "roflumiliast",
+    "expected": "roflumilast"
+  },
+  {
+    "query": "abacavri",
+    "expected": "abacavir"
+  },
+  {
+    "query": "tolterddine",
+    "expected": "tolterodine"
+  },
+  {
+    "query": "samidorfan",
+    "expected": "samidorphan"
+  },
+  {
+    "query": "paromomyczn",
+    "expected": "paromomycin"
+  },
+  {
+    "query": "kanmamycin",
+    "expected": "kanamycin"
+  },
+  {
+    "query": "trobinetide",
+    "expected": "trofinetide"
+  }
 ]
