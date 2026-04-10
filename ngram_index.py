@@ -122,7 +122,7 @@ class NGramIndex:
         return ngrams
 
 
-    def add(self, word: str):
+    def add(self, word: str) -> None:
         """
         Adds a word to the n-gram inverted index.
 
@@ -155,7 +155,7 @@ class NGramIndex:
                 self.n_gram_df[gram] = 1
 
 
-    def add_many(self, words: list[str]):
+    def add_many(self, words: list[str]) -> None:
         for word in words:
             self.add(word)
 

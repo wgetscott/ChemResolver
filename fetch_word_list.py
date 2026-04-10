@@ -19,7 +19,7 @@ def fetch_word_list(limit: int, max_phase: int = 4) -> list[str]:
     
     url = "https://www.ebi.ac.uk/chembl/api/data/molecule"
 
-    params = {
+    params: dict[str, str | int] = {
         "format": "json",
         "limit": limit,
         "max_phase__gte": max_phase,
@@ -40,4 +40,3 @@ if __name__ == "__main__":
     word_list = fetch_word_list(limit=1000)
     save_json("word_list.json", word_list)
     print(f"Saved {len(word_list)} words to word_list.json")
-    
